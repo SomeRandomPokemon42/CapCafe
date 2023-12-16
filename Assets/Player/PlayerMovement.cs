@@ -2,7 +2,7 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 using System;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 	Vector2 inputtedVector = Vector2.zero;
 	public float speed = 5f;
