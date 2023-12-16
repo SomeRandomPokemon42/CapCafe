@@ -8,7 +8,7 @@ This is my capstone project for a unity development course
 Yuhi_nostalgic
 
 ## Art:
-Guildmaker7
+Guildmaker7,
 Me
 
 ## Code:
