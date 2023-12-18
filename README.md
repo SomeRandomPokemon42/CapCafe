@@ -7,8 +7,11 @@ This is my capstone project for a unity development course
 ## Music:
 [Yuhi_nostalgic](https://youtube.com/@nostalgic_BGM?si=23k9JoS4ZfMhFU1W)
 
+## Sound Effects:
+
 ## Art:
 Guildmaker7,
+Minecraft,
 SomeRandomPokemon42
 
 ## Code:
