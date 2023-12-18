@@ -6,6 +6,7 @@ public class InventoryItems : MonoBehaviour
     public enum ItemType
     {
         //Don't Order
+        KeyItem,
         Ingredient,
         //Meal
         Sandwich,

@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 
 public class Inventory : MonoBehaviour
 {
-    public InventoryItems ItemDatabase;
+    private InventoryItems ItemDatabase;
     public List<InventorySlot> slots = new List<InventorySlot>();
     private void Start()
     {
