@@ -13,3 +13,6 @@ SomeRandomPokemon42
 
 ## Code:
 SomeRandomPokemon42
+
+# Changelog
+Changelog will be started once the game functions. for now, too much is changing to log.
