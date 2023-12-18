@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-		AnimationFix = GetComponent<SpriteAnimations>();
+		AnimationFix = GetComponentInChildren<SpriteAnimations>();
     }
     public void WASD(InputAction.CallbackContext context)
 	{
