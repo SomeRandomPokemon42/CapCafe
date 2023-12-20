@@ -17,6 +17,6 @@ public class ChaseScript : MonoBehaviour
 			Mathf.Clamp(Movement.y, -Mathf.Abs(TrackTo.y), Mathf.Abs(TrackTo.y)),
 			Mathf.Clamp(Movement.z, -Mathf.Abs(TrackTo.z), Mathf.Abs(TrackTo.z))
 		);
-		transform.Translate(Movement);
+		transform.Translate(Movement, Space.World);
 	}
 }

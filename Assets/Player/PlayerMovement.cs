@@ -26,6 +26,6 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		transform.Translate(inputtedVector * Time.deltaTime * speed);
+		transform.Translate(new Vector3(inputtedVector.x, 0, inputtedVector.y) * Time.deltaTime * speed);
 	}
 }
