@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CafeObjectSprites_0
+      name: Tabletop
       rect:
         serializedVersion: 2
         x: 0
@@ -131,7 +131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_1
+      name: BlackboardFront
       rect:
         serializedVersion: 2
         x: 50
@@ -152,7 +152,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_2
+      name: BlackboardBack
       rect:
         serializedVersion: 2
         x: 71
@@ -173,7 +173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_3
+      name: Table Support
       rect:
         serializedVersion: 2
         x: 0
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_4
+      name: LanternSide
       rect:
         serializedVersion: 2
         x: 34
@@ -215,7 +215,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_5
+      name: Door
       rect:
         serializedVersion: 2
         x: 48
@@ -236,7 +236,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_6
+      name: StoolSupport
       rect:
         serializedVersion: 2
         x: 0
@@ -257,7 +257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_7
+      name: StoolTop
       rect:
         serializedVersion: 2
         x: 17
@@ -278,7 +278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CafeObjectSprites_8
+      name: Candle
       rect:
         serializedVersion: 2
         x: 37
@@ -309,15 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CafeObjectSprites_0: 1635020446
-      CafeObjectSprites_1: -1378092399
-      CafeObjectSprites_2: -773694278
-      CafeObjectSprites_3: 2044814733
-      CafeObjectSprites_4: -1695616282
-      CafeObjectSprites_5: -517827719
-      CafeObjectSprites_6: -1593372741
-      CafeObjectSprites_7: 470860835
-      CafeObjectSprites_8: -101703426
+      BlackboardBack: -773694278
+      BlackboardFront: -1378092399
+      Candle: -101703426
+      Door: -517827719
+      LanternSide: -1695616282
+      StoolSupport: -1593372741
+      StoolTop: 470860835
+      Table Support: 2044814733
+      Tabletop: 1635020446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
