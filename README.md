@@ -8,10 +8,11 @@ This is my capstone project for a unity development course.
 [Yuhi_nostalgic](https://youtube.com/@nostalgic_BGM?si=23k9JoS4ZfMhFU1W) Who made *Cassiopeia in the Winter Sky*, *City where the sun shines*, and *Treasure Hunt in a Bustling Town*.
 
 ## Sound Effects:
+Zun, Creator of Touhou, Who made the UI Sound Effects *Warning*, *Cancel*, *OK* and *Invalid*
 
 ## Art:
-Character base by Guildmaker7.
-Dirt and Grass Textures from Minecraft.
+Character Template by Guildmaker7.
+Dirt, Oak Log, and Grass Textures from Minecraft.
 All other art by SomeRandomPokemon42.
 
 ## Code:
