@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 5968661679741184859}
   - component: {fileID: 2762500894511211021}
   - component: {fileID: 667482388322050700}
+  - component: {fileID: 1896117552168173397}
   m_Layer: 0
   m_Name: Yaki
   m_TagString: Untagged
@@ -215,7 +216,19 @@ MonoBehaviour:
     m_ActionId: 1ae0935b-8136-417d-8937-eb1ccb8acd38
     m_ActionName: Ingame/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1896117552168173397}
+        m_TargetAssemblyTypeName: InteractionScript, Assembly-CSharp
+        m_MethodName: AttemptInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 3f707b19-34dc-4bbe-985b-601f7304d485
     m_ActionName: Ingame/Use[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
@@ -273,3 +286,15 @@ CapsuleCollider:
   m_Height: 0.7
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1896117552168173397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120227557722797226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ae14d58f1ff86488663b7cdf41dcf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

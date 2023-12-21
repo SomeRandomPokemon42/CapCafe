@@ -17695,34 +17695,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5968661679741184859, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968661679741184859, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968661679741184859, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1360098819651496128}
-    - target: {fileID: 5968661679741184859, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968661679741184859, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AttemptInteract
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968661679741184859, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: InteractionScript, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968661679741184859, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 9120227557722797226, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
       propertyPath: m_Name
       value: Yaki
@@ -17732,17 +17704,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
---- !u!114 &1360098819651496128 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1896117552168173397, guid: 609af444590be4e46bb5b19e68cd56fa, type: 3}
-  m_PrefabInstance: {fileID: 1360098819651496127}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898990184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8ae14d58f1ff86488663b7cdf41dcf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5043639361591164775
 PrefabInstance:
   m_ObjectHideFlags: 0
