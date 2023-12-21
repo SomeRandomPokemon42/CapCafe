@@ -1,8 +1,12 @@
 # CapCafe
  
-A cafe management simulator where you play as a catgirl who has just inherited a abandoned cafe, can you restore it to it's former glory? 
+A cafe management simulator where you play as a catgirl who has just come into possession of an abandoned cafe, can you restore it to it's former glory? 
 
 This is my capstone project for a unity development course.
+
+This uses material I didn't make myself, as such, this project will always remain free
+
+# Credits
 
 ## Music:
 [Yuhi_nostalgic](https://youtube.com/@nostalgic_BGM?si=23k9JoS4ZfMhFU1W) Who made *Cassiopeia in the Winter Sky*, *City where the sun shines*, and *Treasure Hunt in a Bustling Town*.
