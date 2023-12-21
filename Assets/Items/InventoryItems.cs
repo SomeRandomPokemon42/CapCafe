@@ -28,12 +28,22 @@ public class InventoryItems : MonoBehaviour
         public string name;
         public ItemType type;
         public int id;
+        public bool usesPlate;
         public Item(int id, string name, ItemType type, Sprite sprite)
         {
             this.id = id;
             this.name = name;
             this.type = type;
             this.image = sprite;
+
+            if (type == ItemType.Juice || type == ItemType.Alcohol || type == ItemType.Coffee)
+            {
+                this.usesPlate = false;
+            }
+            else
+            {
+                this.usesPlate = true;
+            }
         }
     }
     public Item CreateItem(int id)
