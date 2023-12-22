@@ -1880,7 +1880,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6160014636932349972}
-  - component: {fileID: 3861385978833317248}
   m_Layer: 0
   m_Name: Basin
   m_TagString: Untagged
@@ -1911,27 +1910,6 @@ Transform:
   - {fileID: 8693167986437278650}
   m_Father: {fileID: 700441781247458682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3861385978833317248
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8309833414791292827}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.25, y: 1, z: 2}
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &8378265697042714828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,6 +2003,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700441781247458682}
+  - component: {fileID: 6576038168274771681}
+  - component: {fileID: 1418749671467724400}
   m_Layer: 0
   m_Name: Well
   m_TagString: Untagged
@@ -2051,3 +2031,39 @@ Transform:
   - {fileID: 534002519111017739}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6576038168274771681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8599681227610633323}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.25, y: 2.5, z: 2}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &1418749671467724400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8599681227610633323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4521a6f40a94874c9fa57a247d0dc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerThis:
+    m_PersistentCalls:
+      m_Calls: []
