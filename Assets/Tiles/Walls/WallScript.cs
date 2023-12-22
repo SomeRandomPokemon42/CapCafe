@@ -10,7 +10,7 @@ public class WallScript : MonoBehaviour
 	[SerializeField] private float Speed = 2;
 	private Vector3 defaultPosition;
 	private Vector3 hiddenPosition;
-	private float progress;
+	private float progress = 1;
 	private void Start()
 	{
 		DisplayObject = transform.GetChild(0);
