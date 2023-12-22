@@ -13,8 +13,8 @@ public class WallScript : MonoBehaviour
 	private float progress;
 	private void Start()
 	{
-        DisplayObject = transform.GetChild(0);
-        defaultPosition = DisplayObject.position;
+		DisplayObject = transform.GetChild(0);
+		defaultPosition = DisplayObject.position;
 		hiddenPosition = DisplayObject.position - new Vector3(0, MoveDistance, 0);
 	}
 	public void ShowWall()
