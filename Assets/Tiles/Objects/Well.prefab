@@ -2005,6 +2005,7 @@ GameObject:
   - component: {fileID: 700441781247458682}
   - component: {fileID: 6576038168274771681}
   - component: {fileID: 1418749671467724400}
+  - component: {fileID: 218903677458375018}
   m_Layer: 0
   m_Name: Well
   m_TagString: Untagged
@@ -2066,4 +2067,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TriggerThis:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 218903677458375018}
+        m_TargetAssemblyTypeName: ItemPickup, Assembly-CSharp
+        m_MethodName: Pickup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &218903677458375018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8599681227610633323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f02d8270b39164bbb55009df8a409e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Reusable: 1
+  Uses: 999
+  item: {fileID: 11400000, guid: e9e9b0be5fa760e47b409cf1100fd65c, type: 2}
