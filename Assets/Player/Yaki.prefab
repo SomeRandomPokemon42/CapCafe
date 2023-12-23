@@ -220,7 +220,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1896117552168173397}
         m_TargetAssemblyTypeName: InteractionScript, Assembly-CSharp
         m_MethodName: AttemptInteract
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -298,4 +298,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ae14d58f1ff86488663b7cdf41dcf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractRadius: 1.5
+  InteractRadius: 1.25

@@ -11,7 +11,11 @@ public class ItemPickup : MonoBehaviour
     public void Pickup()
     {
         Uses -= 1;
-        //TODO: Add item to player
+        if (!GameObject.FindGameObjectWithTag("GameController").GetComponent<Directions>().PlayerInventory.AddItem(item))
+        {
+            //This returns false if the adding the item failed, so you get the use back
+            Uses += 1;
+        }
         if (Reusable)
         {
             Uses += 1;
