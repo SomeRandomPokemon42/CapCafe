@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 	Vector2 inputtedVector = Vector2.zero;
 	public float speed = 5f;
 	private SpriteAnimations AnimationFix;
+	public bool MovementLocked = false;
 
     private void Awake()
     {
@@ -14,18 +15,30 @@ public class PlayerMovement : MonoBehaviour
     }
     public void WASD(InputAction.CallbackContext context)
 	{
-		//Movement
-		inputtedVector = context.ReadValue<Vector2>();
-		
-		if (AnimationFix != null)
+		if (!MovementLocked)
 		{
-			AnimationFix.MovementVector = inputtedVector;
+            //Movement
+            inputtedVector = context.ReadValue<Vector2>();
+			//Animation
+            if (AnimationFix != null)
+            {
+                AnimationFix.MovementVector = inputtedVector;
+            }
+        } else
+		{
+			inputtedVector = new Vector2 (0, 0);
 		}
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		transform.Translate(new Vector3(inputtedVector.x, 0, inputtedVector.y) * Time.deltaTime * speed);
+		if (MovementLocked)
+		{
+			inputtedVector = new Vector2(0,0);
+		} else
+		{
+            transform.Translate(new Vector3(inputtedVector.x, 0, inputtedVector.y) * Time.deltaTime * speed);
+        }
 	}
 }
