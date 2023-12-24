@@ -4,7 +4,7 @@ using System;
 
 public class PlayerMovement : MonoBehaviour
 {
-	Vector2 inputtedVector = Vector2.zero;
+	public Vector2 inputtedVector = Vector2.zero;
 	public float speed = 5f;
 	private SpriteAnimations AnimationFix;
 	public bool MovementLocked = false;

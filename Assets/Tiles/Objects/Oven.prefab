@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 562043295375544685}
   - component: {fileID: 525637485864429080}
   - component: {fileID: 5224777804036519807}
+  - component: {fileID: 5192857011105702064}
   m_Layer: 0
   m_Name: Oven
   m_TagString: Untagged
@@ -280,6 +281,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.32, y: 0.64, z: 0.32}
   m_Center: {x: 0, y: 0.16, z: 0.16}
+--- !u!114 &5192857011105702064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4949258786902316868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4521a6f40a94874c9fa57a247d0dc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerThis:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UIBoxHandler, Assembly-CSharp
+        m_MethodName: EnableUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5077605508775744872
 GameObject:
   m_ObjectHideFlags: 0

@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 2762500894511211021}
   - component: {fileID: 667482388322050700}
   - component: {fileID: 1896117552168173397}
+  - component: {fileID: 5145434364814489950}
   m_Layer: 0
   m_Name: Yaki
   m_TagString: Player
@@ -173,7 +174,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64af0e5eaadab7f42bb534488c9c6c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputtedVector: {x: 0, y: 0}
   speed: 5
+  MovementLocked: 0
 --- !u!114 &5968661679741184859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,3 +302,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractRadius: 1.25
+--- !u!81 &5145434364814489950
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120227557722797226}
+  m_Enabled: 1
