@@ -5,8 +5,9 @@ public class ClockUIScript : MonoBehaviour
 {
 	// This is my attempt at making a very reusable and segmented script
 	[Header("Time")]
-	public int hour;
-	public int minute;
+	public TimeScript timescript;
+	private int hour;
+	private int minute;
 	private int lastminute = 99;
 	private int lasthour = 99;
 	[Header("Analog")]
@@ -87,6 +88,8 @@ public class ClockUIScript : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		minute = timescript.minute;
+		hour = timescript.hour;
 		if (lasthour != hour || lastminute != minute)
 		{
 			lasthour = hour;

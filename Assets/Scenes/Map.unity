@@ -16698,6 +16698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527184844}
   - component: {fileID: 527184843}
+  - component: {fileID: 527184845}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -16733,6 +16734,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &527184845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527184842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bced51d53dc173f45b76e4d09068c9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hour: 0
+  minute: 0
+  second: 0
+  TimeSpeed: 10
 --- !u!4 &529787427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
@@ -20098,8 +20115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55fb48afa03402d4295d6f1050df6e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hour: 0
-  minute: 0
+  timescript: {fileID: 527184845}
   AnalogClock: 1
   MinuteHand: {fileID: 53337328}
   HourHand: {fileID: 220663291}
