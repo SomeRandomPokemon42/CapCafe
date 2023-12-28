@@ -16,7 +16,7 @@ Zun, Creator of Touhou, Who made the UI Sound Effects *Warning*, *Cancel*, *OK* 
 
 ## Art:
 Character Template by Guildmaker7.
-Dirt, Oak Log, and Grass Textures from Minecraft.
+Dirt, Oak Log, Spruce Leaf, and Grass Textures from Minecraft.
 All other art by SomeRandomPokemon42.
 
 ## Code:
