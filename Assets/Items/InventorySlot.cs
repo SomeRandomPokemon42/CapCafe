@@ -1,8 +1,7 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class InventorySlot : MonoBehaviour
 {
 	public GameItem StoredItem = null;
 	private Image ItemImage;
@@ -25,13 +24,5 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 		{
 			ItemImage.enabled = false;
 		}
-	}
-	public void OnPointerEnter(PointerEventData eventData)
-	{
-		MyImage.color = Color.yellow;
-	}
-	public void OnPointerExit(PointerEventData eventData)
-	{
-		MyImage.color = Color.white;
 	}
 }
