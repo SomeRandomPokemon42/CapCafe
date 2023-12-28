@@ -28,12 +28,10 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 	}
 	public void OnPointerEnter(PointerEventData eventData)
 	{
-		Debug.Log("Over");
 		MyImage.color = Color.yellow;
 	}
 	public void OnPointerExit(PointerEventData eventData)
 	{
-		Debug.Log("Out");
 		MyImage.color = Color.white;
 	}
 }
