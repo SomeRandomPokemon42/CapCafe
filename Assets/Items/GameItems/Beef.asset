@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Beef
   Icon: {fileID: -1283011399, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
-  BaseValue: 0
-  Sellable: 0
+  BaseValue: 3
+  Sellable: 1
   KeyItem: 0
   Orderable: 0
-  IsBeverage: 1
+  IsBeverage: 0
   IsAlcohol: 0
