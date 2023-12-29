@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -16,4 +15,7 @@ public class GameItem : ScriptableObject
     public bool Orderable = false;
     public bool IsBeverage = false;
     public bool IsAlcohol = false;
+    [Header("Contents")]
+    public bool HasMeat = false;
+    public bool HasMilk = false;
 }

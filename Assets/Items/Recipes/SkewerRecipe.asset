@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
+  m_Name: SkewerRecipe
+  m_EditorClassIdentifier: 
+  Result: {fileID: 11400000, guid: fb1bc9298cd6ac1419bbd732c60ce6bd, type: 2}
+  Inputs:
+  - {fileID: 11400000, guid: 2ae1fbb0f5b16004696c9e15b51c8fdd, type: 2}
+  - {fileID: 11400000, guid: 71450b8004b5d4747afa36e0ce2e0ce2, type: 2}
+  - {fileID: 11400000, guid: 7d86661f5c60f624994daba119df02f5, type: 2}
+  cookingType: 2
+  CookTime: 1
