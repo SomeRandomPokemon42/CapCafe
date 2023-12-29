@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd2ede18e140ee4b89816930966c36f, type: 3}
-  m_Name: Carrot
+  m_Name: Bread
   m_EditorClassIdentifier: 
-  Name: Carrot
-  Icon: {fileID: -196220560, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
-  BaseValue: 2
+  Name: Bread
+  Icon: {fileID: -1917437635, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
+  BaseValue: 3
   Sellable: 1
   KeyItem: 0
   Orderable: 0
