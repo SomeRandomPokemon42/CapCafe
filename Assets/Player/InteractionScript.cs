@@ -13,7 +13,7 @@ public class InteractionScript : MonoBehaviour
             float TargetDistance = InteractRadius * 50;
             foreach (Collider collider in Potential)
             {
-                if (collider.GetComponent<Interactable>() != null)
+                if (collider.GetComponent<Interactable>() != null || collider.GetComponent<InventoryInteractable>())
                 {
                     // Acting as though the Y is 0 equalizes things, making the math cleaner.
                     float Distance = Vector3.Distance(
@@ -24,6 +24,10 @@ public class InteractionScript : MonoBehaviour
                     {
                         TargetDistance = Distance;
                         Target = collider.GetComponent<Interactable>();
+                        if (Target == null)
+                        {
+                            Target = collider.GetComponent<InventoryInteractable>();
+                        }
                     }
                 }
             }

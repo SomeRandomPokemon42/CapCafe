@@ -3,6 +3,8 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     private InventorySlot[] inventorySlots;
+    // this "Second Inventory" controls where items are moved too if a move action is attempted
+    public InventoryManager SecondInventory;
 
     void Start()
     {
@@ -13,7 +15,7 @@ public class InventoryManager : MonoBehaviour
     {
         foreach (InventorySlot slot in inventorySlots)
         {
-            if (slot.StoredItem == null)
+            if (slot.StoredItem == null && !slot.OutputOnlySlot)
             {
                 return slot;
             }

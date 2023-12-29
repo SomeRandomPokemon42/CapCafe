@@ -5,13 +5,17 @@ public class InventorySlot : MonoBehaviour
 {
 	public GameItem StoredItem = null;
 	private Image ItemImage;
-	private RectTransform MyTransform;
-	private Image MyImage;
+	public bool OutputOnlySlot = false;
 	void Start()
 	{
-		MyTransform = GetComponent<RectTransform>();
-		MyImage = GetComponent<Image>();
-		ItemImage = transform.GetChild(0).GetComponent<Image>();
+		ItemImage = null;
+		foreach (Transform t in transform)
+		{
+			if (t.GetComponent<Image>() != null)
+			{
+				ItemImage = t.GetComponent<Image>();
+			}
+		}
 	}
 	private void Update()
 	{

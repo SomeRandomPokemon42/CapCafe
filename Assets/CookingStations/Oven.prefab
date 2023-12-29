@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 562043295375544685}
   - component: {fileID: 525637485864429080}
   - component: {fileID: 5224777804036519807}
-  - component: {fileID: 5192857011105702064}
+  - component: {fileID: 3983994302925846149}
   m_Layer: 0
   m_Name: Oven
   m_TagString: Untagged
@@ -281,7 +281,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.32, y: 0.64, z: 0.32}
   m_Center: {x: 0, y: 0.16, z: 0.16}
---- !u!114 &5192857011105702064
+--- !u!114 &3983994302925846149
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4949258786902316868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4521a6f40a94874c9fa57a247d0dc60, type: 3}
+  m_Script: {fileID: 11500000, guid: 13f2e9a5fbdb6524680ff2701f2cf256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerThis:
@@ -308,6 +308,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  inventoryManager: {fileID: 0}
 --- !u!1 &5077605508775744872
 GameObject:
   m_ObjectHideFlags: 0
