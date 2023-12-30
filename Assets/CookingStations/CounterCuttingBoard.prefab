@@ -110,15 +110,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -145,14 +145,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 238756263717155626, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -424435912215572524}
+      addedObject: {fileID: 3143419004071333803}
   m_SourcePrefab: {fileID: 100100000, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
 --- !u!1 &2699836363622657039 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 238756263717155626, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
   m_PrefabInstance: {fileID: 2749312679459659557}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-424435912215572524
+--- !u!114 &3143419004071333803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,12 +161,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 2699836363622657039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4521a6f40a94874c9fa57a247d0dc60, type: 3}
+  m_Script: {fileID: 11500000, guid: 13f2e9a5fbdb6524680ff2701f2cf256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   TriggerThis:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UIBoxHandler, Assembly-CSharp
+        m_MethodName: EnableUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  inventoryManager: {fileID: 0}
 --- !u!4 &2827398253769925577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
