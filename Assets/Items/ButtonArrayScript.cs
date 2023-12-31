@@ -40,7 +40,7 @@ public class ButtonArrayScript : MonoBehaviour
 			{
 				DiscardButtonObject.interactable = false;
 			}
-			
+			Manager.DeselectOldSlot(ThisSlot);
 		}
 	}
 	public void DiscardButton()

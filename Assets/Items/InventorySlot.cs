@@ -6,6 +6,7 @@ public class InventorySlot : MonoBehaviour
 	public GameItem StoredItem = null;
 	private Image ItemImage;
 	public bool OutputOnlySlot = false;
+
 	void Start()
 	{
 		ItemImage = null;
@@ -28,5 +29,10 @@ public class InventorySlot : MonoBehaviour
 		{
 			ItemImage.enabled = false;
 		}
+	}
+
+	public void HideButtonArray()
+	{
+		gameObject.GetComponentInChildren<ButtonArrayScript>().CancelButton();
 	}
 }

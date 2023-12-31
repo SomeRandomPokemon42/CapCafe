@@ -24959,33 +24959,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 88652610}
     m_Modifications:
     - target: {fileID: -7000341297411200580, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7000341297411200580, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7000341297411200580, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
       propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 114216147}
-    - target: {fileID: -7000341297411200580, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -7000341297411200580, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EnableUI
-      objectReference: {fileID: 0}
-    - target: {fileID: -7000341297411200580, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIBoxHandler, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: -7000341297411200580, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1819274478194227506, guid: b3b39b49da5ed8c459812776ebe40183, type: 3}
       propertyPath: m_Name
       value: Counter (6)
@@ -26064,33 +26040,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 88652610}
     m_Modifications:
     - target: {fileID: -2166729523946326235, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2166729523946326235, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2166729523946326235, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
       propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 606042330}
-    - target: {fileID: -2166729523946326235, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -2166729523946326235, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EnableUI
-      objectReference: {fileID: 0}
-    - target: {fileID: -2166729523946326235, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIBoxHandler, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: -2166729523946326235, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
-      propertyPath: TriggerThis.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6153554557632777527, guid: 1513e8ef9e767174c9d0bc5e925595c3, type: 3}
       propertyPath: m_Name
       value: Counter (9)
