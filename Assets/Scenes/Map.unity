@@ -1043,6 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
+  OnlyAllowOrderables: 0
 --- !u!114 &146774142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22210,6 +22211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
+  OnlyAllowOrderables: 0
 --- !u!4 &1499302557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7387409197465637575, guid: 7d8156951c82e8645967d9b08da6a111, type: 3}
@@ -22297,6 +22299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
+  OnlyAllowOrderables: 0
 --- !u!4 &1529861436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1426296724705761888, guid: 995fd9edf63f617498b0bd96ad19c4bf, type: 3}
