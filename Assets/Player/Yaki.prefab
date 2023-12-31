@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4173414798497483198}
   - component: {fileID: 5348190553532057644}
   - component: {fileID: 1761316056894085590}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 667482388322050700}
   - component: {fileID: 1896117552168173397}
   - component: {fileID: 5145434364814489950}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Yaki
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -234,6 +234,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 3f707b19-34dc-4bbe-985b-601f7304d485
     m_ActionName: Ingame/Use[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 998aa266-0f61-4df2-a0b7-fb8293a6e0ca
+    m_ActionName: UI/Confirm[/Mouse/leftButton,/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8f77b376-1920-4b0d-84a6-e86329d4bb40
+    m_ActionName: UI/Cancel[/Mouse/rightButton,/Keyboard/escape,/Keyboard/backspace,/Keyboard/delete]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 67bd3b34-c9ab-4d2b-b73d-8ed33e13b1fd
+    m_ActionName: UI/Scroll[/Mouse/scroll,/Keyboard/pageUp,/Keyboard/pageDown]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4bc74b3d-e43d-4024-9962-70473a0df621
+    m_ActionName: UI/Point[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Ingame
@@ -248,7 +264,7 @@ Rigidbody:
   m_GameObject: {fileID: 9120227557722797226}
   serializedVersion: 4
   m_Mass: 120
-  m_Drag: 1
+  m_Drag: 5
   m_AngularDrag: 1000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}

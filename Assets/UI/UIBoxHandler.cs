@@ -87,10 +87,10 @@ public class UIBoxHandler : MonoBehaviour
 	{
 		if (UIDisplayed)
 		{
-            MoveProgress = 1 - MoveProgress;
-            UIDisplayed = false;
-            AffectUI(false);
-        }
+			MoveProgress = 1 - MoveProgress;
+			UIDisplayed = false;
+			AffectUI(false);
+		}
 	}
 	public void EnableUI()
 	{

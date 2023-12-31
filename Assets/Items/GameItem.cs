@@ -18,4 +18,9 @@ public class GameItem : ScriptableObject
     [Header("Contents")]
     public bool HasMeat = false;
     public bool HasMilk = false;
+
+    public GameItem Clone()
+    {
+        return (GameItem)this.MemberwiseClone();
+    }
 }
