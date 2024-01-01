@@ -65,7 +65,7 @@ public class InventoryManager : MonoBehaviour
 				itemindex++;
 			} else if (slot.StoredItem == null && !slot.OutputOnlySlot && itemindex < Items.Length)
 			{
-				if (!Items[itemindex].Orderable)
+				if (!Items[itemindex].Orderable && OnlyAllowOrderables)
 				{
 					Leftovers.Add(Items[itemindex]);
 					itemindex++;
