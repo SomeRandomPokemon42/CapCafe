@@ -15,12 +15,23 @@ public class InteractionScript : MonoBehaviour
             {
                 if (collider.GetComponent<Interactable>() != null || collider.GetComponent<InventoryInteractable>())
                 {
-                    // Acting as though the Y is 0 equalizes things, making the math cleaner.
-                    float Distance = Vector3.Distance(
+                    // Is it usable?
+                    bool Active = false;
+					if (collider.GetComponent<Interactable>())
+					{
+						Active = !GetComponent<Interactable>().Disabled;
+					}
+					if (collider.GetComponent<InventoryInteractable>())
+					{
+						Active = !GetComponent<InventoryInteractable>().Disabled;
+					}
+
+					// Acting as though the Y is 0 equalizes things, making the math cleaner.
+					float Distance = Vector3.Distance(
                         new Vector3(transform.position.x, 0f, transform.position.z),
                         new Vector3(collider.transform.position.x, 0f, collider.transform.position.z));
 
-                    if (TargetDistance > Distance)
+                    if (TargetDistance > Distance && Active)
                     {
                         TargetDistance = Distance;
                         Target = collider.GetComponent<Interactable>();
