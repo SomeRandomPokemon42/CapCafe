@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plate (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4684544185157716943, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235bb5ef7e0c0234493446d84b0c7704, type: 2}
     - target: {fileID: 7819138751048336011, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -166,6 +170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plate (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4684544185157716943, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235bb5ef7e0c0234493446d84b0c7704, type: 2}
     - target: {fileID: 7819138751048336011, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -432,6 +440,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plate
       objectReference: {fileID: 0}
+    - target: {fileID: 4684544185157716943, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235bb5ef7e0c0234493446d84b0c7704, type: 2}
     - target: {fileID: 7819138751048336011, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -507,6 +519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4684544185157716943, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 235bb5ef7e0c0234493446d84b0c7704, type: 2}
     - target: {fileID: 7819138751048336011, guid: 85cbfc91ef6ecf84a95b0fba10dd7aaa, type: 3}
       propertyPath: m_Enabled
       value: 0
