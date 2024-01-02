@@ -13,12 +13,12 @@ public class TimeScript : MonoBehaviour
     void Update()
     {
         second += Time.deltaTime * TimeSpeed;
-        if (second > 60)
+        if (second >= 60)
         {
             second -= 60;
             minute += 1;
         }
-        if (minute > 60)
+        if (minute >= 60)
         {
             minute -= 60;
             hour += 1;
