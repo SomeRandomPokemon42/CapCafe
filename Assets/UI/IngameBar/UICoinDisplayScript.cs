@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -27,39 +28,12 @@ public class UICoinDisplayScript : MonoBehaviour
         if (money.amount != OldMoney)
         {
             OldMoney = money.amount;
-            // Get money
-            int copper = money.amount;
-            int silver = Mathf.FloorToInt(copper / 10);
-            copper -= silver * 10;
-            int gold = Mathf.FloorToInt(silver / 10);
-            silver -= gold * 10;
-            int platinum = Mathf.FloorToInt(gold / 10);
-            gold -= platinum * 10;
-            // Convert down
-            for (int p = platinum; p >= 100; p--)
-            {
-                platinum--;
-                gold += 10;
-            }
-            for (int g = gold; g >= 100; g--)
-            {
-                gold--;
-                silver += 10;
-            }
-            for (int s = silver; s >= 100; s--)
-            {
-                silver--;
-                copper += 10;
-            }
-            for (int c = copper; c >= 100; c--)
-            {
-                copper--;
-            }
             // Write to TextMesh
-            CopperText.text = ConvertNumberToString2(copper);
-            SilverText.text = ConvertNumberToString2(silver);
-            GoldText.text = ConvertNumberToString2(gold);
-            PlatinumText.text = ConvertNumberToString2(platinum);
+			Tuple<int,int,int,int> coins = PlayerMoney.CoinConversion(money.amount);
+            CopperText.text = ConvertNumberToString2(coins.Item1);
+            SilverText.text = ConvertNumberToString2(coins.Item2);
+            GoldText.text = ConvertNumberToString2(coins.Item3);
+            PlatinumText.text = ConvertNumberToString2(coins.Item4);
         }
     }
 }

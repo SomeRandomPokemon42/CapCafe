@@ -3,15 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMoney : MonoBehaviour
+public class StoreItemScript : MonoBehaviour
 {
-    public int amount;
-
-	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// STATIC FUNCTIONS
-	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	// These functions help program things, and dont modify anything on their own
-	public static Tuple<int, int, int, int> CoinConversion(int price)
+    GameItem Item;
+    int Price = 0; public Tuple<int, int, int, int> CoinConversion(int price)
 	{
 		// Get money
 		int copper = price;
@@ -43,4 +38,15 @@ public class PlayerMoney : MonoBehaviour
 		}
 		return new Tuple<int, int, int, int>(copper, silver, gold, platinum);
 	}
+	// Start is called before the first frame update
+	void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
