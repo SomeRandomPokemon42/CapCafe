@@ -2622,21 +2622,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4521a6f40a94874c9fa57a247d0dc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Disabled: 0
   TriggerThis:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 797081350}
-        m_TargetAssemblyTypeName: UIBoxHandler, Assembly-CSharp
-        m_MethodName: EnableUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!136 &392976792
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18995,6 +18984,7 @@ GameObject:
   - component: {fileID: 527184843}
   - component: {fileID: 527184845}
   - component: {fileID: 527184846}
+  - component: {fileID: 527184847}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -19044,6 +19034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bced51d53dc173f45b76e4d09068c9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  day: 0
   hour: 8
   minute: 0
   second: 0
@@ -19064,6 +19055,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 100
+--- !u!114 &527184847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527184842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06518c2df44e0d438c777f95a873fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &529787427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}

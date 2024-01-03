@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 public class TimeScript : MonoBehaviour
 {
+	public int day = 0;
 	public int hour = 0;
 	public int minute = 0;
 	public float second = 0;
@@ -27,6 +28,7 @@ public class TimeScript : MonoBehaviour
 		if (hour >= 24)
 		{
 			hour -= 24;
+			day += 1;
 		}
 	}
 }
