@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoreUIScript : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class StoreUIScript : MonoBehaviour
 
 	private void Start()
 	{
-		StoreItems = GetComponentInChildren<GridLayout>().transform;
+		StoreItems = GetComponentInChildren<GridLayoutGroup>().transform;
 		Stonks = GameObject.FindGameObjectWithTag("GameController").GetComponent<StockMarketScript>();
 	}
 
@@ -25,6 +26,7 @@ public class StoreUIScript : MonoBehaviour
 	}
 	public void StockShop(GameItem[] Items)
 	{
+		ClearShop();
 		foreach (GameItem item in Items)
 		{
 			GameObject ShopItem = Instantiate(StoreItemPrefab, StoreItems);
