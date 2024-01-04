@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: 3495865156934989408, guid: 60daf16e350f19f4494f577cf86f9289, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1384236826, guid: 994a47c871edb0b4b9f1df12813f840d, type: 3}
+      objectReference: {fileID: 231053689, guid: c2197713bf9cd7f4bb89c66c59bcf193, type: 3}
     - target: {fileID: 4194668907543731218, guid: 60daf16e350f19f4494f577cf86f9289, type: 3}
       propertyPath: m_Name
       value: WallPillarFront1 (1)
@@ -168,6 +168,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 1237553743371352177, guid: 4e0842f5dc3a94a44b71e7f3d4f01c11, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 231053689, guid: c2197713bf9cd7f4bb89c66c59bcf193, type: 3}
     - target: {fileID: 3193940206514150993, guid: 4e0842f5dc3a94a44b71e7f3d4f01c11, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -202,7 +206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7262501120443327427, guid: 4e0842f5dc3a94a44b71e7f3d4f01c11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7262501120443327427, guid: 4e0842f5dc3a94a44b71e7f3d4f01c11, type: 3}
       propertyPath: m_LocalPosition.y
@@ -210,7 +214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7262501120443327427, guid: 4e0842f5dc3a94a44b71e7f3d4f01c11, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 7262501120443327427, guid: 4e0842f5dc3a94a44b71e7f3d4f01c11, type: 3}
       propertyPath: m_LocalRotation.w
@@ -292,7 +296,7 @@ PrefabInstance:
     - target: {fileID: 3495865156934989408, guid: 60daf16e350f19f4494f577cf86f9289, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1384236826, guid: 994a47c871edb0b4b9f1df12813f840d, type: 3}
+      objectReference: {fileID: 231053689, guid: c2197713bf9cd7f4bb89c66c59bcf193, type: 3}
     - target: {fileID: 4194668907543731218, guid: 60daf16e350f19f4494f577cf86f9289, type: 3}
       propertyPath: m_Name
       value: WallPillarFront8 (2)
@@ -448,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 3495865156934989408, guid: 60daf16e350f19f4494f577cf86f9289, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1384236826, guid: 994a47c871edb0b4b9f1df12813f840d, type: 3}
+      objectReference: {fileID: 231053689, guid: c2197713bf9cd7f4bb89c66c59bcf193, type: 3}
     - target: {fileID: 4194668907543731218, guid: 60daf16e350f19f4494f577cf86f9289, type: 3}
       propertyPath: m_Name
       value: WallPillarFront8 (1)
