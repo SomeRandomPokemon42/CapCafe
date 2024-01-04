@@ -10,7 +10,7 @@ public class UIBoxHandler : MonoBehaviour
 	Vector2 OnscreenPosition;
 	[SerializeField] private float speed = 1f;
 	RectTransform MyTransform;
-	float MoveProgress = 0;
+	public float MoveProgress = 0;
 	private enum Direction { Left, Right, Top, Bottom };
 	[SerializeField] private Direction ZoomDirection = Direction.Top;
 	[SerializeField] private bool OppositeExit = false; //Whether the UI sould exit the screen on the opposite side it entered
