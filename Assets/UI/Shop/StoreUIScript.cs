@@ -33,6 +33,7 @@ public class StoreUIScript : MonoBehaviour
 			StoreItemScript ShopItemScript = ShopItem.GetComponent<StoreItemScript>();
 			ShopItemScript.Item = item;
 			ShopItemScript.Price = Stonks.STONKS(item.BaseValue);
+			ShopItemScript.Ping();
 		}
 	}
 }

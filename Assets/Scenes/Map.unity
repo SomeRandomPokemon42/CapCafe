@@ -375,7 +375,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.35
+  m_fontSize: 11.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1973,7 +1973,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.35
+  m_fontSize: 11.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2112,7 +2112,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.95
+  m_fontSize: 11.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2536,6 +2536,7 @@ GameObject:
   - component: {fileID: 392976791}
   - component: {fileID: 392976790}
   - component: {fileID: 392976792}
+  - component: {fileID: 392976793}
   m_Layer: 0
   m_Name: Farmer
   m_TagString: Untagged
@@ -2625,7 +2626,31 @@ MonoBehaviour:
   Disabled: 0
   TriggerThis:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 392976793}
+        m_TargetAssemblyTypeName: StockStore, Assembly-CSharp
+        m_MethodName: Stock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 797081350}
+        m_TargetAssemblyTypeName: UIBoxHandler, Assembly-CSharp
+        m_MethodName: EnableUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!136 &392976792
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2649,6 +2674,36 @@ CapsuleCollider:
   m_Height: 0.59000003
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &392976793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392976788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892c375c4cddf9f4c9c04f445b1b0ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopUI: {fileID: 797081351}
+  ItemsToStock:
+  - {fileID: 11400000, guid: 37841d29f59598a46b7c48c5c3b5ce95, type: 2}
+  - {fileID: 11400000, guid: cc14553c99e94e54b88296eb7788ffde, type: 2}
+  - {fileID: 11400000, guid: 8d7e0a2906e6a314c88227c5b0b3b16d, type: 2}
+  - {fileID: 11400000, guid: ac7df6cf33374f14b93fc245bbad10c0, type: 2}
+  - {fileID: 11400000, guid: 87d0ecfd4c108f0439dbd2f8f51bedda, type: 2}
+  - {fileID: 11400000, guid: 010a1607c9009844988f172e99ca8960, type: 2}
+  - {fileID: 11400000, guid: d21b89296e5cc034395833591098dd3a, type: 2}
+  - {fileID: 11400000, guid: 72ede12f2f0714e4f81341a9b7dd97d9, type: 2}
+  - {fileID: 11400000, guid: f4f730c5493fc404cb13cb40648a1b9f, type: 2}
+  - {fileID: 11400000, guid: 281cfdf4574fe01449a3848fb1d59a26, type: 2}
+  - {fileID: 11400000, guid: 69939b38aeb4a86409776d40099aa033, type: 2}
+  - {fileID: 11400000, guid: 2ae1fbb0f5b16004696c9e15b51c8fdd, type: 2}
+  - {fileID: 11400000, guid: 646b62b5eefbb954c906fb37b06d5d74, type: 2}
+  - {fileID: 11400000, guid: c4804bf1b8d3e5a4590b968219780b25, type: 2}
+  - {fileID: 11400000, guid: ae3b1020a363736499c89734cd06b865, type: 2}
+  - {fileID: 11400000, guid: bb76b373b84818245a6180fd2a5f3604, type: 2}
 --- !u!1 &405254959
 GameObject:
   m_ObjectHideFlags: 0
@@ -22677,7 +22732,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.35
+  m_fontSize: 18.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -26079,7 +26134,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.95
+  m_fontSize: 11.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -29050,6 +29105,14 @@ PrefabInstance:
     - target: {fileID: 1672386272820042809, guid: e9d8fef6c3e6fb643ae5a607ffdef835, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012815542165996833, guid: e9d8fef6c3e6fb643ae5a607ffdef835, type: 3}
+      propertyPath: m_FlexibleWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012815542165996833, guid: e9d8fef6c3e6fb643ae5a607ffdef835, type: 3}
+      propertyPath: m_FlexibleHeight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3246345673580393301, guid: e9d8fef6c3e6fb643ae5a607ffdef835, type: 3}
       propertyPath: m_Name

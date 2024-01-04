@@ -10,7 +10,7 @@ public class StoreItemScript : MonoBehaviour
 	PriceTagScript priceTag;
 
 	// Start is called before the first frame update
-	void Start()
+	void Awake()
 	{
 		priceTag = GetComponentInChildren<PriceTagScript>();
 	}
