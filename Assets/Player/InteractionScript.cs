@@ -19,11 +19,11 @@ public class InteractionScript : MonoBehaviour
                     bool Active = false;
 					if (collider.GetComponent<Interactable>())
 					{
-						Active = !GetComponent<Interactable>().Disabled;
+						Active = !collider.GetComponent<Interactable>().Disabled;
 					}
 					if (collider.GetComponent<InventoryInteractable>())
 					{
-						Active = !GetComponent<InventoryInteractable>().Disabled;
+						Active = !collider.GetComponent<InventoryInteractable>().Disabled;
 					}
 
 					// Acting as though the Y is 0 equalizes things, making the math cleaner.
