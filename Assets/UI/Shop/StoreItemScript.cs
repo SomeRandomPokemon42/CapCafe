@@ -8,6 +8,7 @@ public class StoreItemScript : MonoBehaviour
 	[Header("Assign In Inspector")]
 	[SerializeField] Image ItemImage = null;
 	PriceTagScript priceTag;
+	public bool OnCooldown = false;
 
 	// Start is called before the first frame update
 	void Awake()
@@ -21,6 +22,12 @@ public class StoreItemScript : MonoBehaviour
 	}
 	public void Purchase()
 	{
+		if (OnCooldown)
+		{
+			return;
+		}
+		OnCooldown = true;
+		Invoke("DisableCooldown", 0.1f);
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		InventoryManager playerInventory = controller.GetComponent<Directions>().PlayerInventory;
 		PlayerMoney playerMoney = controller.GetComponent<PlayerMoney>();
@@ -28,5 +35,9 @@ public class StoreItemScript : MonoBehaviour
 		{
 			playerMoney.amount -= Price;
 		}
+	}
+	private void DisableCooldown()
+	{
+		OnCooldown = false;
 	}
 }
