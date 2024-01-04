@@ -34,7 +34,7 @@ public class InteractionScript : MonoBehaviour
                     if (TargetDistance > Distance && Active)
                     {
                         TargetDistance = Distance;
-                        Target = collider.GetComponent<Interactable>();
+                        collider.TryGetComponent(out Target);
                         if (Target == null)
                         {
                             Target = collider.GetComponent<InventoryInteractable>();
