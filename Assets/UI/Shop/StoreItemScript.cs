@@ -27,7 +27,7 @@ public class StoreItemScript : MonoBehaviour
 			return;
 		}
 		OnCooldown = true;
-		Invoke("DisableCooldown", 0.1f);
+		Invoke(nameof(DisableCooldown), 0.1f);
 		GameObject controller = GameObject.FindGameObjectWithTag("GameController");
 		InventoryManager playerInventory = controller.GetComponent<Directions>().PlayerInventory;
 		PlayerMoney playerMoney = controller.GetComponent<PlayerMoney>();

@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: cb6aee77ba39f8447add69cd67ddbf97, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1449,8 +1449,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 132470067}
   m_HandleRect: {fileID: 1733447513}
   m_Direction: 3
-  m_Value: 0.5000043
-  m_Size: 0.6485311
+  m_Value: 0.5000008
+  m_Size: 0.25031024
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3127,6 +3127,7 @@ GameObject:
   - component: {fileID: 392976790}
   - component: {fileID: 392976792}
   - component: {fileID: 392976793}
+  - component: {fileID: 392976794}
   m_Layer: 0
   m_Name: Farmer
   m_TagString: Untagged
@@ -3292,6 +3293,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c4804bf1b8d3e5a4590b968219780b25, type: 2}
   - {fileID: 11400000, guid: ae3b1020a363736499c89734cd06b865, type: 2}
   - {fileID: 11400000, guid: bb76b373b84818245a6180fd2a5f3604, type: 2}
+--- !u!114 &392976794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392976788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202652dd988b2f14f84fce7deefc9c69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisableRadius: 5
+  TimeToDisable: 20
+  TimeToEnable: 6
 --- !u!1 &405254959
 GameObject:
   m_ObjectHideFlags: 0
@@ -26860,7 +26876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.961, y: 1}
-  m_AnchoredPosition: {x: 11.483551, y: -0.0008239746}
+  m_AnchoredPosition: {x: 11.484711, y: -0.0008239746}
   m_SizeDelta: {x: -0.8808594, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1420436877
@@ -26883,7 +26899,7 @@ MonoBehaviour:
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 130}
+  m_CellSize: {x: 150, y: 195}
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 5
@@ -28740,14 +28756,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: cb6aee77ba39f8447add69cd67ddbf97, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
