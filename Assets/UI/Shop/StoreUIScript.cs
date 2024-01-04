@@ -32,7 +32,7 @@ public class StoreUIScript : MonoBehaviour
 			GameObject ShopItem = Instantiate(StoreItemPrefab, StoreItems);
 			StoreItemScript ShopItemScript = ShopItem.GetComponent<StoreItemScript>();
 			ShopItemScript.Item = item;
-			ShopItemScript.Price = Stonks.STONKS(item.BaseValue);
+			ShopItemScript.Price = Stonks.STONKS(item);
 			ShopItemScript.Ping();
 		}
 	}
