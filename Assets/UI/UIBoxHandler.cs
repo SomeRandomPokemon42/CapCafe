@@ -70,7 +70,7 @@ public class UIBoxHandler : MonoBehaviour
 			}
 			else
 			{
-				MyTransform.localPosition = Vector2.Lerp(OnscreenPosition, OffscreenPosition - (OnscreenPosition - OffscreenPosition), MoveProgress);
+				MyTransform.localPosition = Vector2.Lerp(OnscreenPosition, OnscreenPosition + (OnscreenPosition - OffscreenPosition), MoveProgress);
 			}
 		}
 	}
