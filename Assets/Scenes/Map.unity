@@ -3789,6 +3789,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c4804bf1b8d3e5a4590b968219780b25, type: 2}
   - {fileID: 11400000, guid: ae3b1020a363736499c89734cd06b865, type: 2}
   - {fileID: 11400000, guid: bb76b373b84818245a6180fd2a5f3604, type: 2}
+  ShiftWhen: -1
+  HowMany: -1
+  Varience: -1
 --- !u!114 &392976794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33151,6 +33154,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b41863143b6010a498176f6b37edf4bc, type: 2}
   - {fileID: 11400000, guid: 6974059c7519db84dafe534978d931d3, type: 2}
   - {fileID: 11400000, guid: a44c8ee38e6724143b8b15ca8de2252c, type: 2}
+  ShiftWhen: -1
+  HowMany: -1
+  Varience: -1
 --- !u!136 &1995050353
 CapsuleCollider:
   m_ObjectHideFlags: 0
