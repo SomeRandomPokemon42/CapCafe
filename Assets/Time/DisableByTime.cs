@@ -18,6 +18,7 @@ public class DisableByTime : MonoBehaviour
 		sprite = GetComponent<SpriteRenderer>();
 		GameTime = GameObject.FindGameObjectWithTag("GameController").GetComponent<TimeScript>();
 		GameTime.HourHasPassed.AddListener(CheckTime);
+		CheckTime();
 	}
 	private void CheckTime()
 	{
@@ -29,7 +30,7 @@ public class DisableByTime : MonoBehaviour
 	}
 	private void CanIDisable()
 	{
-		Collider[] collisions = null;
+		Collider[] collisions = new Collider[1]; // only 1 player
 		Physics.OverlapSphereNonAlloc(transform.position, DisableRadius, collisions, 7, QueryTriggerInteraction.Ignore);
 		if (collisions.Length == 0)
 		{

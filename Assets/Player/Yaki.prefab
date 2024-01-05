@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ae14d58f1ff86488663b7cdf41dcf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InteractRadius: 1.25
+  InteractRadius: 1.5
 --- !u!81 &5145434364814489950
 AudioListener:
   m_ObjectHideFlags: 0
