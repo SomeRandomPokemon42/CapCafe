@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Pumpkin
   Icon: {fileID: -47521158, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
-  BaseValue: 4
+  BaseValue: 5
   Sellable: 1
   KeyItem: 0
   Orderable: 0

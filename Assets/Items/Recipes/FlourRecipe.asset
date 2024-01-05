@@ -16,4 +16,4 @@ MonoBehaviour:
   Inputs:
   - {fileID: 11400000, guid: bb76b373b84818245a6180fd2a5f3604, type: 2}
   cookingType: 4
-  CookTime: 3
+  CookTime: 2

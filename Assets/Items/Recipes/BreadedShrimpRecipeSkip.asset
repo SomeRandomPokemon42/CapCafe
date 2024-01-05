@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
-  m_Name: BatterRecipe1
+  m_Name: BreadedShrimpRecipeSkip
   m_EditorClassIdentifier: 
-  Result: {fileID: 11400000, guid: e560ad83710b0684b968a2177ad1563b, type: 2}
+  Result: {fileID: 11400000, guid: b129ec79473d3ed43be48b24c728b7d5, type: 2}
   Inputs:
-  - {fileID: 11400000, guid: d21b89296e5cc034395833591098dd3a, type: 2}
-  - {fileID: 11400000, guid: e9e9b0be5fa760e47b409cf1100fd65c, type: 2}
+  - {fileID: 11400000, guid: 6974059c7519db84dafe534978d931d3, type: 2}
+  - {fileID: 11400000, guid: 4a0e1563ccfc73d4dbd5743788e5db8f, type: 2}
+  - {fileID: 11400000, guid: a97c81ac47af53c4f8744e434d165b38, type: 2}
   - {fileID: 11400000, guid: d8ea35a34a5363445950eb4049bb4dff, type: 2}
-  cookingType: 5
-  CookTime: 1.25
+  cookingType: 1
+  CookTime: 1

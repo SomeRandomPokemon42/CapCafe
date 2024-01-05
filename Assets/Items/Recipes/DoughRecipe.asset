@@ -17,4 +17,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d21b89296e5cc034395833591098dd3a, type: 2}
   - {fileID: 11400000, guid: e9e9b0be5fa760e47b409cf1100fd65c, type: 2}
   cookingType: 5
-  CookTime: 2.5
+  CookTime: 1

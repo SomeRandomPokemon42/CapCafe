@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Breaded Shrimp
   Icon: {fileID: -199767408, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
-  BaseValue: 22
+  BaseValue: 30
   Sellable: 1
   KeyItem: 0
   Orderable: 1

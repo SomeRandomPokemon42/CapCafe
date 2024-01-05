@@ -17,7 +17,7 @@ MonoBehaviour:
   BaseValue: 5
   Sellable: 1
   KeyItem: 0
-  Orderable: 0
+  Orderable: 1
   IsBeverage: 0
   IsAlcohol: 0
   HasMeat: 0
