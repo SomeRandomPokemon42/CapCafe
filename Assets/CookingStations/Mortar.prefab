@@ -166,7 +166,7 @@ PrefabInstance:
       objectReference: {fileID: -2118421558, guid: defbcb4a8a0a2a84f9d0125377aa26bb, type: 3}
     - target: {fileID: 8740028737824539665, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
       propertyPath: m_Name
-      value: Mortar Variant
+      value: Mortar
       objectReference: {fileID: 0}
     - target: {fileID: 9070343439309535546, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
       propertyPath: m_AnchorMax.y
@@ -195,5 +195,26 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8740028737824539665, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8529625884600164101}
   m_SourcePrefab: {fileID: 100100000, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
+--- !u!1 &4097376557432703815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8740028737824539665, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
+  m_PrefabInstance: {fileID: 4725999569764536150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8529625884600164101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097376557432703815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf2a2622300be4e8c5c87fedbbfc8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cookingType: 4

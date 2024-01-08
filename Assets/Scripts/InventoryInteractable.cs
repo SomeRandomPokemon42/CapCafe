@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class InventoryInteractable : Interactable
 {
-	[SerializeField] private InventoryManager inventoryManager;
+	public readonly InventoryManager inventoryManager;
 	private Directions directions;
     private void Start()
     {

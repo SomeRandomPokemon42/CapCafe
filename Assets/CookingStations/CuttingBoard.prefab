@@ -423,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
+  OnlyAllowOrderables: 0
 --- !u!1 &7474099187807948165
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +692,7 @@ GameObject:
   - component: {fileID: 2953067724380044214}
   - component: {fileID: 6546807259065070024}
   - component: {fileID: 8265950796169236959}
+  - component: {fileID: 732930276977901895}
   m_Layer: 5
   m_Name: CuttingBoard
   m_TagString: Untagged
@@ -705,7 +707,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8740028737824539665}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -773,6 +775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIDisplayed: 0
   speed: 2
+  MoveProgress: 0
   ZoomDirection: 3
   OppositeExit: 0
 --- !u!114 &8265950796169236959
@@ -790,6 +793,19 @@ MonoBehaviour:
   UI: {fileID: 6546807259065070024}
   movement: {fileID: 0}
   RunawayDistance: 1.5
+--- !u!114 &732930276977901895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8740028737824539665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf2a2622300be4e8c5c87fedbbfc8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cookingType: 0
 --- !u!1001 &995782190209909666
 PrefabInstance:
   m_ObjectHideFlags: 0

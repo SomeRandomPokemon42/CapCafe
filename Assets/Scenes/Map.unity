@@ -20749,6 +20749,7 @@ GameObject:
   - component: {fileID: 527184846}
   - component: {fileID: 527184847}
   - component: {fileID: 527184848}
+  - component: {fileID: 527184849}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -20846,6 +20847,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Popup: {fileID: 57902468}
   ToastTime: 2
+--- !u!114 &527184849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527184842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98001a6daabbcc41ae95e1dac596122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowedRecipes: []
 --- !u!1 &529722186
 GameObject:
   m_ObjectHideFlags: 0
