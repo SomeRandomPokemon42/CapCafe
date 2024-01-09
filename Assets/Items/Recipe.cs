@@ -11,6 +11,7 @@ public class Recipe : ScriptableObject
 	public GameItem[] Inputs;
 
 	public CookingType cookingType;
+	[Tooltip("How many segments of 15 minutes it takes to create, decimals supported")]
 	public float CookTime;
 
 	public bool CompareIngredients(GameItem[] items)

@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
-  m_Name: CaramelRecipe
+  m_Name: SugarCookieRecipeSkip
   m_EditorClassIdentifier: 
-  Result: {fileID: 11400000, guid: 9e12559f737573748b25e52ceb4d217c, type: 2}
+  Result: {fileID: 11400000, guid: 95be512778145cc4f95b0269b7c6fba9, type: 2}
   Inputs:
   - {fileID: 11400000, guid: 43a62fd45a296f042aca5abc5249bda5, type: 2}
-  cookingType: 1
-  CookTime: 1
+  - {fileID: 11400000, guid: d21b89296e5cc034395833591098dd3a, type: 2}
+  - {fileID: 11400000, guid: 3a553711477ca0b4a8dfe21cfd19d6ba, type: 2}
+  - {fileID: 11400000, guid: d8ea35a34a5363445950eb4049bb4dff, type: 2}
+  cookingType: 3
+  CookTime: 2

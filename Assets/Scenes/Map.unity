@@ -568,7 +568,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.95
+  m_fontSize: 8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1609,8 +1609,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 132470067}
   m_HandleRect: {fileID: 1733447513}
   m_Direction: 3
-  m_Value: 0.5000008
-  m_Size: 0.25031024
+  m_Value: 0.5000007
+  m_Size: 0.12744257
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2782,7 +2782,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.95
+  m_fontSize: 8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2921,7 +2921,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.55
+  m_fontSize: 8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3245,7 +3245,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.8
+  m_fontSize: 20.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20772,27 +20772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98001a6daabbcc41ae95e1dac596122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AllowedRecipes:
-  - {fileID: 11400000, guid: b7c6b535090fa3e4ebba6a25c97779ad, type: 2}
-  - {fileID: 11400000, guid: 0e271a0b081aa344ba9420f79304e784, type: 2}
-  - {fileID: 11400000, guid: fe1b733f63e1b4a46943c8dda42c4f8a, type: 2}
-  - {fileID: 11400000, guid: 33339c850d2589e4aafef7dd4d171675, type: 2}
-  - {fileID: 11400000, guid: cc1bb11e3e08e99449c03d492628e800, type: 2}
-  - {fileID: 11400000, guid: d25d09e81bc171048b415427e66e3dd6, type: 2}
-  - {fileID: 11400000, guid: 354c4780efe70994186f52b28d715183, type: 2}
-  - {fileID: 11400000, guid: d49220aad9b0d784bafb34bc5160c677, type: 2}
-  - {fileID: 11400000, guid: 84025b1bb35380e479ab60a047f1be8c, type: 2}
-  - {fileID: 11400000, guid: ee32619c4d26a5446b3fa54d537c8744, type: 2}
-  - {fileID: 11400000, guid: e9c3d6a7eeab0e0438c53c20d3069e2d, type: 2}
-  - {fileID: 11400000, guid: f44be31e48b7b7249830c141ccd50dec, type: 2}
-  - {fileID: 11400000, guid: 6ab7b357e128d704dbd60465b1451123, type: 2}
-  - {fileID: 11400000, guid: 9044cc63f7f80f1479a14def850a4264, type: 2}
-  - {fileID: 11400000, guid: 67e92b3753ba79d4bbb4e04d59314c21, type: 2}
-  - {fileID: 11400000, guid: b04bee5d46e5040458b912016e35494f, type: 2}
-  - {fileID: 11400000, guid: 378e4f84820cfa648b5a232cd0cc8dc6, type: 2}
-  - {fileID: 11400000, guid: ee7b010086670454abf723daabc36ebb, type: 2}
-  - {fileID: 11400000, guid: 567ee07821fa83d4db38c065da0a923c, type: 2}
-  - {fileID: 11400000, guid: d9edf91b43622b54ab3f0d4b5935dbf4, type: 2}
+  AllowedRecipes: []
 --- !u!1 &529722186
 GameObject:
   m_ObjectHideFlags: 0
@@ -25744,7 +25724,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.85
+  m_fontSize: 9.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -30474,7 +30454,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.55
+  m_fontSize: 8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -33100,6 +33080,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b41863143b6010a498176f6b37edf4bc, type: 2}
   - {fileID: 11400000, guid: 6974059c7519db84dafe534978d931d3, type: 2}
   - {fileID: 11400000, guid: a44c8ee38e6724143b8b15ca8de2252c, type: 2}
+  - {fileID: 11400000, guid: 7d4cbbb560af0ca48a9f88461a6ed88f, type: 2}
+  - {fileID: 11400000, guid: 0ee5bb5483eb7754caf028c7728c8762, type: 2}
   ShiftWhen: -1
   HowMany: -1
   Varience: -1

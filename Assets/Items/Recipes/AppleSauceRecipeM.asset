@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
-  m_Name: CaramelRecipe
+  m_Name: AppleSauceRecipeM
   m_EditorClassIdentifier: 
-  Result: {fileID: 11400000, guid: 9e12559f737573748b25e52ceb4d217c, type: 2}
+  Result: {fileID: 11400000, guid: 40aee31ffe0357f49871a36355fb2214, type: 2}
   Inputs:
+  - {fileID: 11400000, guid: d8ea35a34a5363445950eb4049bb4dff, type: 2}
   - {fileID: 11400000, guid: 43a62fd45a296f042aca5abc5249bda5, type: 2}
-  cookingType: 1
+  - {fileID: 11400000, guid: 37841d29f59598a46b7c48c5c3b5ce95, type: 2}
+  cookingType: 5
   CookTime: 1

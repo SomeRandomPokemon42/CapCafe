@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
-  m_Name: CaramelRecipe
+  m_Name: TorielPieRecipe
   m_EditorClassIdentifier: 
-  Result: {fileID: 11400000, guid: 9e12559f737573748b25e52ceb4d217c, type: 2}
+  Result: {fileID: 11400000, guid: 28828e1537be73644bc04ad38033dde8, type: 2}
   Inputs:
-  - {fileID: 11400000, guid: 43a62fd45a296f042aca5abc5249bda5, type: 2}
-  cookingType: 1
-  CookTime: 1
+  - {fileID: 11400000, guid: adbd71a578c260045a09ee1cd64eb35f, type: 2}
+  - {fileID: 11400000, guid: 2fd01254756174d44a171814b1552c0b, type: 2}
+  - {fileID: 11400000, guid: 4a0e1563ccfc73d4dbd5743788e5db8f, type: 2}
+  cookingType: 3
+  CookTime: 4

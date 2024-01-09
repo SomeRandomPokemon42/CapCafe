@@ -3,10 +3,12 @@ using UnityEngine.Events;
 
 public class TimeScript : MonoBehaviour
 {
+	[Header("In-Game Time")]
 	public int day = 0;
 	public int hour = 0;
 	public int minute = 0;
 	public float second = 0;
+	[Header("Speeds")]
 	public float TimeSpeed = 15;
 
 	public UnityEvent HourHasPassed = new();
