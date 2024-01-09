@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f2e9a5fbdb6524680ff2701f2cf256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Disabled: 0
   TriggerThis:
     m_PersistentCalls:
       m_Calls:
@@ -308,7 +309,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  inventoryManager: {fileID: 0}
 --- !u!1 &5077605508775744872
 GameObject:
   m_ObjectHideFlags: 0

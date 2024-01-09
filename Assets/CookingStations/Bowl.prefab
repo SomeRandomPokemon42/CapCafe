@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 732930276977901895, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
+      propertyPath: cookingType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648752257705313680, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4338925814989837353, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -166,7 +174,7 @@ PrefabInstance:
       objectReference: {fileID: -316140043, guid: defbcb4a8a0a2a84f9d0125377aa26bb, type: 3}
     - target: {fileID: 8740028737824539665, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
       propertyPath: m_Name
-      value: Bowl Variant
+      value: Bowl
       objectReference: {fileID: 0}
     - target: {fileID: 9070343439309535546, guid: d81c32d5aeac13d4b878ec749e8282c2, type: 3}
       propertyPath: m_AnchorMax.y
