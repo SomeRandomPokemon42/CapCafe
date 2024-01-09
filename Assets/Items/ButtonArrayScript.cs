@@ -19,7 +19,7 @@ public class ButtonArrayScript : MonoBehaviour
 	public void AttemptToActivate()
 	{
 		// This is the bare minimum for item actions to be available
-		if (ThisSlot.StoredItem != null)
+		if (ThisSlot.StoredItem != null && ThisSlot.AllowInteracting)
 		{
 			// Reset
 			DiscardButtonObject.gameObject.SetActive(true);

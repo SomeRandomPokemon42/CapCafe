@@ -13,11 +13,11 @@ public class RecipeBook : MonoBehaviour
         Grind, // Mortar and Pestle
         Mix // Mixing Bowl
     }
-    public List<Recipe> AllowedRecipes = new List<Recipe>();
+    public List<Recipe> AllowedRecipes = new();
 
     public List<Recipe> RequestValidRecipes(CookingType RecipeType)
     {
-        List<Recipe> output = new List<Recipe>();
+        List<Recipe> output = new();
 
         foreach (Recipe recipe in AllowedRecipes)
             if (recipe.cookingType == RecipeType)
@@ -31,12 +31,16 @@ public class RecipeBook : MonoBehaviour
     {
         foreach (Recipe recipe in AllowedRecipes)
         {
-            
+            if (recipe.cookingType == RecipeType && recipe.CompareIngredients(items))
+            {
+                return recipe;
+            }
         }
+        return null;
     }
     public Recipe GetWhatsCooking(CookingType RecipeType, InventorySlot[] inputSlots)
     {
-        List<GameItem> InputtedItems = new List<GameItem>();
+        List<GameItem> InputtedItems = new();
         foreach (InventorySlot slot in inputSlots)
         {
             if (slot.StoredItem != null)

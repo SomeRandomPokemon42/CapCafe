@@ -6,6 +6,7 @@ public class InventorySlot : MonoBehaviour
 	public GameItem StoredItem = null;
 	private Image ItemImage;
 	public bool OutputOnlySlot = false;
+	public bool AllowInteracting = true;
 
 	void Start()
 	{
