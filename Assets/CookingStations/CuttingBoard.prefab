@@ -806,6 +806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cookingType: 0
+  StartCraftingButton: {fileID: 4948665445866235875}
 --- !u!1001 &995782190209909666
 PrefabInstance:
   m_ObjectHideFlags: 0

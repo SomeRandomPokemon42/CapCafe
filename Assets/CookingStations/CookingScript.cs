@@ -9,9 +9,10 @@ public class CookingScript : MonoBehaviour
 	// Framework
 	private RecipeBook book;
 	private TimeScript gameTime;
-	private Button StartCraftingButton;
+	[SerializeField] private Button StartCraftingButton;
 	private InventoryManager InventorySlots;
 	private InventorySlot OutputSlots;
+	private Image OutputSlotPreview = null;
 	private InventorySlot[] InputSlots;
 	private Slider ProgressMeter;
 	private bool Cooking = false;
@@ -20,9 +21,7 @@ public class CookingScript : MonoBehaviour
 	{
 		book = GameObject.FindGameObjectWithTag("GameController").GetComponent<RecipeBook>();
 		gameTime = book.gameObject.GetComponent<TimeScript>();
-		StartCraftingButton = GetComponent<Button>();
-		InventorySlots = transform.parent.GetComponentInChildren<InventoryManager>();
-		ProgressMeter = transform.parent.GetComponentInChildren<Slider>();
+		InventorySlots = transform.GetComponentInChildren<InventoryManager>();
 
 		InventorySlot[] AllSlots = InventorySlots.GetComponentsInChildren<InventorySlot>();
 		List<InventorySlot> InpSlots = new();
@@ -35,10 +34,20 @@ public class CookingScript : MonoBehaviour
 			} else
 			{
 				InpSlots.Add(slot);
+				slot.SlotModified.AddListener(PreviewCooking);
 			}
 		}
 		InputSlots = InpSlots.ToArray();
 		OutputSlots = OutSlots[0];
+		foreach (Transform child in OutputSlots.transform)
+		{
+			if (child.GetComponent<Image>() != null)
+			{
+				OutputSlotPreview = child.GetChild(0).GetComponent<Image>();
+				break;
+			}
+		}
+		ProgressMeter = OutputSlots.GetComponentInChildren<Slider>();
 		StartCraftingButton.onClick.AddListener(LetEmCook);
 	}
 	private void Update()
@@ -47,14 +56,45 @@ public class CookingScript : MonoBehaviour
 		{
 			CraftingTimer -= Time.deltaTime;
 			ProgressMeter.value = ProgressMeter.maxValue - CraftingTimer;
+			if (CraftingTimer <= 0)
+			{
+				OutputSlots.AllowInteracting = true;
+				Cooking = false;
+				ProgressMeter.value = 0;
+				OutputSlots.ItemImage.color = Color.white;
+			}
 		}
+	}
+	private bool CanModifyOutputWithThis(out Recipe WhatsCooking)
+	{
+		WhatsCooking = null;
+		if (OutputSlots.StoredItem != null || Cooking)
+		{
+			return false;
+		}
+		WhatsCooking = book.GetWhatsCooking(cookingType, InputSlots);
+		if (WhatsCooking == null)
+		{
+			return false;
+		}
+		return true;
+	}
+	private void PreviewCooking()
+	{
+		Recipe WhatsCooking = null;
+		if (!CanModifyOutputWithThis(out WhatsCooking))
+		{
+			OutputSlotPreview.enabled = false;
+			return;
+		}
+		OutputSlotPreview.enabled = true;
+		OutputSlotPreview.sprite = WhatsCooking.Result.Icon; 
 	}
 	private void LetEmCook()
 	{
 		// Check if we can do this
-		// GetWhatsCooking is an expensive function, cache that shit.
-		Recipe WhatsCooking = book.GetWhatsCooking(cookingType, InputSlots);
-		if (Cooking || WhatsCooking == null || OutputSlots.StoredItem != null)
+		Recipe WhatsCooking = null;
+		if (!CanModifyOutputWithThis(out WhatsCooking))
 		{
 			return;
 		}
@@ -69,6 +109,8 @@ public class CookingScript : MonoBehaviour
 		CraftingTimer = (WhatsCooking.CookTime * 60) / gameTime.TimeSpeed;
 		ProgressMeter.maxValue = (WhatsCooking.CookTime * 60) / gameTime.TimeSpeed;
 		// Output the result
+		OutputSlotPreview.enabled = false;
 		OutputSlots.StoredItem = WhatsCooking.Result;
+		OutputSlots.ItemImage.color = new Color(1, 1, 1, 0.5f);
 	}
 }
