@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bradford_0
+      name: BradfordDown1
       rect:
         serializedVersion: 2
         x: 16
@@ -131,7 +131,7 @@ TextureImporter:
         width: 30
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_1
+      name: BradfordDown2
       rect:
         serializedVersion: 2
         x: 78
@@ -152,7 +152,7 @@ TextureImporter:
         width: 34
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_2
+      name: BradfordDown3
       rect:
         serializedVersion: 2
         x: 146
@@ -173,7 +173,7 @@ TextureImporter:
         width: 30
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_3
+      name: BradfordLeft1
       rect:
         serializedVersion: 2
         x: 19
@@ -194,7 +194,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_4
+      name: BradfordLeft2
       rect:
         serializedVersion: 2
         x: 83
@@ -215,7 +215,7 @@ TextureImporter:
         width: 26
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_5
+      name: BradfordLeft3
       rect:
         serializedVersion: 2
         x: 147
@@ -236,7 +236,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_6
+      name: BradfordRight1
       rect:
         serializedVersion: 2
         x: 18
@@ -257,7 +257,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_7
+      name: BradfordRight2
       rect:
         serializedVersion: 2
         x: 82
@@ -278,7 +278,7 @@ TextureImporter:
         width: 26
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_8
+      name: BradfordRight3
       rect:
         serializedVersion: 2
         x: 146
@@ -299,7 +299,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_9
+      name: BradfordUp1
       rect:
         serializedVersion: 2
         x: 17
@@ -320,7 +320,7 @@ TextureImporter:
         width: 30
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_10
+      name: BradfordUp2
       rect:
         serializedVersion: 2
         x: 79
@@ -341,7 +341,7 @@ TextureImporter:
         width: 34
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bradford_11
+      name: BradfordUp3
       rect:
         serializedVersion: 2
         x: 145
@@ -362,7 +362,7 @@ TextureImporter:
         width: 30
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,18 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bradford_0: -1528148964
-      Bradford_1: 1535227625
-      Bradford_10: -755701436
-      Bradford_11: 1538764124
-      Bradford_2: 1503072381
-      Bradford_3: 1764319237
-      Bradford_4: 1285443233
-      Bradford_5: -1704942585
-      Bradford_6: 1664837206
-      Bradford_7: 1738929394
-      Bradford_8: -1173668612
-      Bradford_9: -1431540336
+      BradfordDown1: -1528148964
+      BradfordDown2: 1535227625
+      BradfordDown3: 1503072381
+      BradfordLeft1: 1764319237
+      BradfordLeft2: 1285443233
+      BradfordLeft3: -1704942585
+      BradfordRight1: 1664837206
+      BradfordRight2: 1738929394
+      BradfordRight3: -1173668612
+      BradfordUp1: -1431540336
+      BradfordUp2: -755701436
+      BradfordUp3: 1538764124
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Extras2_0
+      name: GuardDown1
       rect:
         serializedVersion: 2
         x: 17
@@ -131,7 +131,7 @@ TextureImporter:
         width: 29
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_1
+      name: GuardDown2
       rect:
         serializedVersion: 2
         x: 79
@@ -152,7 +152,7 @@ TextureImporter:
         width: 34
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_2
+      name: GuardDown3
       rect:
         serializedVersion: 2
         x: 145
@@ -173,7 +173,7 @@ TextureImporter:
         width: 29
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_3
+      name: GuardLeft1
       rect:
         serializedVersion: 2
         x: 19
@@ -194,7 +194,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_4
+      name: GuardLeft2
       rect:
         serializedVersion: 2
         x: 83
@@ -215,7 +215,7 @@ TextureImporter:
         width: 26
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_5
+      name: GuardLeft3
       rect:
         serializedVersion: 2
         x: 147
@@ -236,7 +236,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_6
+      name: GuardRight1
       rect:
         serializedVersion: 2
         x: 18
@@ -257,7 +257,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_7
+      name: GuardRight2
       rect:
         serializedVersion: 2
         x: 82
@@ -278,7 +278,7 @@ TextureImporter:
         width: 26
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_8
+      name: GuardRight3
       rect:
         serializedVersion: 2
         x: 146
@@ -299,7 +299,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_9
+      name: GuardUp1
       rect:
         serializedVersion: 2
         x: 17
@@ -320,7 +320,7 @@ TextureImporter:
         width: 29
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_10
+      name: GuardUp2
       rect:
         serializedVersion: 2
         x: 79
@@ -341,7 +341,7 @@ TextureImporter:
         width: 34
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Extras2_11
+      name: GuardUp3
       rect:
         serializedVersion: 2
         x: 145
@@ -362,7 +362,7 @@ TextureImporter:
         width: 29
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,18 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Extras2_0: -892163383
-      Extras2_1: 1185989623
-      Extras2_10: 949411046
-      Extras2_11: 700318451
-      Extras2_2: 2020698820
-      Extras2_3: 916060491
-      Extras2_4: -70776063
-      Extras2_5: -1726179224
-      Extras2_6: -1962872825
-      Extras2_7: 1309799340
-      Extras2_8: 1076214991
-      Extras2_9: -168185588
+      GuardDown1: -892163383
+      GuardDown2: 1185989623
+      GuardDown3: 2020698820
+      GuardLeft1: 916060491
+      GuardLeft2: -70776063
+      GuardLeft3: -1726179224
+      GuardRight1: -1962872825
+      GuardRight2: 1309799340
+      GuardRight3: 1076214991
+      GuardUp1: -168185588
+      GuardUp2: 949411046
+      GuardUp3: 700318451
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
