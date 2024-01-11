@@ -1,7 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SpriteAnimations : MonoBehaviour
 {
+	[SerializeField] [Tooltip("The maximum speed we can move without animating")] private float StopThreshold = 0.1f;
 	public Sprite UpSprite;
 	public Sprite DownSprite;
 	public Sprite LeftSprite;
@@ -9,6 +12,8 @@ public class SpriteAnimations : MonoBehaviour
 	private Animator MyAnimator;
 	private SpriteRenderer MyRenderer;
 	public Vector2 MovementVector = Vector2.zero;
+	private bool DoItYourselfMode = false;
+	private NavMeshAgent Agent = null;
 	public enum SpriteDirection
 	{ // These are the order of the sprites from top to bottom, and what the animator wants.
 	  // Yes i know there's no 0, imagine being a flawwed puny human like me
@@ -22,11 +27,29 @@ public class SpriteAnimations : MonoBehaviour
 	{
 		MyAnimator = GetComponent<Animator>();
 		MyRenderer = GetComponent<SpriteRenderer>();
+		if (gameObject.GetComponentInParent<NavMeshAgent>() != null)
+		{
+			DoItYourselfMode = true;
+			Agent = gameObject.GetComponentInParent<NavMeshAgent>();
+		}
 	}
 
 	void Update()
 	{
-		if (Mathf.Abs(MovementVector.x) + Mathf.Abs(MovementVector.y) > 0.1f)
+		// Nothing will be writing to MovementVector, so we have to
+		if (DoItYourselfMode)
+		{
+			if (Mathf.Abs(Agent.velocity.x) + Mathf.Abs(Agent.velocity.y) + Mathf.Abs(Agent.velocity.z) < StopThreshold)
+			{
+				MovementVector = Vector2.zero;
+			} else
+			{
+				MovementVector = transform.parent.forward.normalized;
+			}
+		}
+
+
+		if (Mathf.Abs(MovementVector.x) + Mathf.Abs(MovementVector.y) > StopThreshold)
 		{ // Animate based on direction
 			MyAnimator.speed = 1f;
 			if (Mathf.Abs(MovementVector.x) > Mathf.Abs(MovementVector.y))

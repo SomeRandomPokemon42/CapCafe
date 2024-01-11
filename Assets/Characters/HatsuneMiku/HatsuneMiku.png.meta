@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HatsuneMiku_0
+      name: HatsuneMikuDown1
       rect:
         serializedVersion: 2
         x: 16
@@ -131,7 +131,7 @@ TextureImporter:
         width: 32
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_1
+      name: HatsuneMikuDown2
       rect:
         serializedVersion: 2
         x: 78
@@ -152,7 +152,7 @@ TextureImporter:
         width: 35
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_2
+      name: HatsuneMikuDown3
       rect:
         serializedVersion: 2
         x: 144
@@ -173,7 +173,7 @@ TextureImporter:
         width: 32
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_3
+      name: HatsuneMikuLeft1
       rect:
         serializedVersion: 2
         x: 19
@@ -194,7 +194,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_4
+      name: HatsuneMikuLeft2
       rect:
         serializedVersion: 2
         x: 83
@@ -215,7 +215,7 @@ TextureImporter:
         width: 26
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_5
+      name: HatsuneMikuLeft3
       rect:
         serializedVersion: 2
         x: 147
@@ -236,7 +236,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_6
+      name: HatsuneMikuRight1
       rect:
         serializedVersion: 2
         x: 18
@@ -257,7 +257,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_7
+      name: HatsuneMikuRight2
       rect:
         serializedVersion: 2
         x: 81
@@ -278,7 +278,7 @@ TextureImporter:
         width: 26
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_8
+      name: HatsuneMikuRight3
       rect:
         serializedVersion: 2
         x: 146
@@ -299,7 +299,7 @@ TextureImporter:
         width: 26
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_9
+      name: HatsuneMikuUp1
       rect:
         serializedVersion: 2
         x: 16
@@ -320,7 +320,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_10
+      name: HatsuneMikuUp2
       rect:
         serializedVersion: 2
         x: 79
@@ -341,7 +341,7 @@ TextureImporter:
         width: 34
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HatsuneMiku_11
+      name: HatsuneMikuUp3
       rect:
         serializedVersion: 2
         x: 144
@@ -362,7 +362,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,18 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HatsuneMiku_0: -1453917705
-      HatsuneMiku_1: 571209917
-      HatsuneMiku_10: -306679949
-      HatsuneMiku_11: 1465315705
-      HatsuneMiku_2: 1320372077
-      HatsuneMiku_3: 1242997228
-      HatsuneMiku_4: -2024291716
-      HatsuneMiku_5: 1937632870
-      HatsuneMiku_6: -1573890986
-      HatsuneMiku_7: 1794419880
-      HatsuneMiku_8: -1600398477
-      HatsuneMiku_9: 1563263892
+      HatsuneMikuDown1: -1453917705
+      HatsuneMikuDown2: 571209917
+      HatsuneMikuDown3: 1320372077
+      HatsuneMikuLeft1: 1242997228
+      HatsuneMikuLeft2: -2024291716
+      HatsuneMikuLeft3: 1937632870
+      HatsuneMikuRight1: -1573890986
+      HatsuneMikuRight2: 1794419880
+      HatsuneMikuRight3: -1600398477
+      HatsuneMikuUp1: 1563263892
+      HatsuneMikuUp2: -306679949
+      HatsuneMikuUp3: 1465315705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

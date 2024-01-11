@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kuda_0
+      name: IzunaDown1
       rect:
         serializedVersion: 2
         x: 16
@@ -131,7 +131,7 @@ TextureImporter:
         width: 31
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_1
+      name: IzunaDown2
       rect:
         serializedVersion: 2
         x: 78
@@ -152,7 +152,7 @@ TextureImporter:
         width: 35
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_2
+      name: IzunaDown3
       rect:
         serializedVersion: 2
         x: 145
@@ -173,7 +173,7 @@ TextureImporter:
         width: 31
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_3
+      name: IzunaLeft1
       rect:
         serializedVersion: 2
         x: 19
@@ -194,7 +194,7 @@ TextureImporter:
         width: 34
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_4
+      name: IzunaLeft2
       rect:
         serializedVersion: 2
         x: 83
@@ -215,7 +215,7 @@ TextureImporter:
         width: 34
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_5
+      name: IzunaLeft3
       rect:
         serializedVersion: 2
         x: 147
@@ -236,7 +236,7 @@ TextureImporter:
         width: 33
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_6
+      name: IzunaRight1
       rect:
         serializedVersion: 2
         x: 12
@@ -257,7 +257,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_7
+      name: IzunaRight2
       rect:
         serializedVersion: 2
         x: 76
@@ -278,7 +278,7 @@ TextureImporter:
         width: 32
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_8
+      name: IzunaRight3
       rect:
         serializedVersion: 2
         x: 140
@@ -299,7 +299,7 @@ TextureImporter:
         width: 32
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_9
+      name: IzunaUp1
       rect:
         serializedVersion: 2
         x: 17
@@ -320,7 +320,7 @@ TextureImporter:
         width: 30
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_10
+      name: IzunaUp2
       rect:
         serializedVersion: 2
         x: 79
@@ -341,7 +341,7 @@ TextureImporter:
         width: 34
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kuda_11
+      name: IzunaUp3
       rect:
         serializedVersion: 2
         x: 145
@@ -362,7 +362,7 @@ TextureImporter:
         width: 30
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -385,18 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kuda_0: 200564788
-      Kuda_1: -2138762451
-      Kuda_10: -315769723
-      Kuda_11: -1633071119
-      Kuda_2: 344459242
-      Kuda_3: 2118418781
-      Kuda_4: 1374488940
-      Kuda_5: 1581939682
-      Kuda_6: -417101569
-      Kuda_7: 899494416
-      Kuda_8: 902879043
-      Kuda_9: -666039002
+      IzunaDown1: 200564788
+      IzunaDown2: -2138762451
+      IzunaDown3: 344459242
+      IzunaLeft1: 2118418781
+      IzunaLeft2: 1374488940
+      IzunaLeft3: 1581939682
+      IzunaRight1: -417101569
+      IzunaRight2: 899494416
+      IzunaRight3: 902879043
+      IzunaUp1: -666039002
+      IzunaUp2: -315769723
+      IzunaUp3: -1633071119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
