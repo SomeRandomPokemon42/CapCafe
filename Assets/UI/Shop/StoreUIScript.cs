@@ -1,13 +1,10 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StoreUIScript : MonoBehaviour
 {
-    [SerializeField] GameObject StoreItemPrefab;
-    private Transform StoreItems;
+	[SerializeField] GameObject StoreItemPrefab;
+	private Transform StoreItems;
 	private StockMarketScript Stonks;
 
 	private void Start()
@@ -19,7 +16,7 @@ public class StoreUIScript : MonoBehaviour
 	public void ClearShop()
 	{
 		foreach (Transform child in StoreItems)
-		{ 
+		{
 			// Its ok, its done with cyanide, quick and painless...
 			Destroy(child.gameObject);
 		}

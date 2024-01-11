@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -21,6 +19,6 @@ public class GameItem : ScriptableObject
 
 	public GameItem Clone()
 	{
-		return (GameItem)this.MemberwiseClone();
+		return (GameItem)MemberwiseClone();
 	}
 }

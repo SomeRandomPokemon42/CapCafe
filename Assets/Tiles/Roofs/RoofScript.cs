@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RoofScript : MonoBehaviour
@@ -29,14 +27,14 @@ public class RoofScript : MonoBehaviour
 		}
 		progress = Mathf.Clamp(progress, FadeLevel, 1);
 		// This if statement looks dumb, but floating points are dumb, so shut up
-		if (Mathf.RoundToInt(progress*100) != Mathf.RoundToInt(lastprogress*100))
+		if (Mathf.RoundToInt(progress * 100) != Mathf.RoundToInt(lastprogress * 100))
 		{
-            SpriteRenderer[] Renderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
-            foreach (SpriteRenderer r in Renderers)
-            {
-                r.color = new Color(1, 1, 1, progress);
-            }
-        }
+			SpriteRenderer[] Renderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
+			foreach (SpriteRenderer r in Renderers)
+			{
+				r.color = new Color(1, 1, 1, progress);
+			}
+		}
 		lastprogress = progress;
 	}
 }

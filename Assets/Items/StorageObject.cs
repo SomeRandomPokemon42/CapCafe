@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -33,7 +31,8 @@ public class StorageObject : MonoBehaviour
 			{
 				OnOpen();
 				Adjusted.Invoke();
-			} else if (DoIExist)
+			}
+			else if (DoIExist)
 			{
 				DoIExist = false;
 				OnClose();

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShowStoredItems : MonoBehaviour
@@ -25,7 +23,8 @@ public class ShowStoredItems : MonoBehaviour
 				plate.enabled = true;
 				plate.sprite = Storage.storedItems[PlatesUsed].Icon;
 				PlatesUsed++;
-			} else
+			}
+			else
 			{
 				plate.enabled = false;
 			}
