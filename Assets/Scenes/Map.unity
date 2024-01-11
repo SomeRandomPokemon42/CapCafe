@@ -190,7 +190,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1735947769, guid: 994a47c871edb0b4b9f1df12813f840d, type: 3}
+  m_Sprite: {fileID: -23832788, guid: 87b03f41c49f73c44b486081b8e19e94, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20685,6 +20685,7 @@ GameObject:
   - component: {fileID: 527184847}
   - component: {fileID: 527184848}
   - component: {fileID: 527184849}
+  - component: {fileID: 527184850}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -20837,6 +20838,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e96100aa3d2f5004fad386abaec59f01, type: 2}
   - {fileID: 11400000, guid: 59e9ef96ef62cae4991715cca53f7a33, type: 2}
   - {fileID: 11400000, guid: 258d979a94504244abde1f7d4c67a98b, type: 2}
+--- !u!114 &527184850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527184842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124c5f798f51d93458e778f92cfce9c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GUIThings: []
+  OpenTexture: {fileID: -1735947769, guid: 994a47c871edb0b4b9f1df12813f840d, type: 3}
+  ClosedTexture: {fileID: -23832788, guid: 87b03f41c49f73c44b486081b8e19e94, type: 3}
+  OpenAt: 10
+  CloseAt: 20
+  Open: 0
 --- !u!1 &529722186
 GameObject:
   m_ObjectHideFlags: 0
@@ -20983,7 +21002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1735947769, guid: 994a47c871edb0b4b9f1df12813f840d, type: 3}
+  m_Sprite: {fileID: -23832788, guid: 87b03f41c49f73c44b486081b8e19e94, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
