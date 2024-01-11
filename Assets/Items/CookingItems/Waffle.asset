@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcd2ede18e140ee4b89816930966c36f, type: 3}
-  m_Name: Tapioca
+  m_Name: Waffle
   m_EditorClassIdentifier: 
-  Name: Tapioca Pearls
-  Icon: {fileID: -432815998, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
-  BaseValue: 25
+  Name: Waffle
+  Icon: {fileID: 1641592461, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
+  BaseValue: 32
   Sellable: 1
   KeyItem: 0
-  Orderable: 0
+  Orderable: 1
   IsBeverage: 0
   HasAlcohol: 0
   HasMeat: 0
-  HasMilk: 0
+  HasMilk: 1

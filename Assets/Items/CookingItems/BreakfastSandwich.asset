@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Breakfast Sandwich
   Icon: {fileID: -236988866, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
-  BaseValue: 42
+  BaseValue: 45
   Sellable: 1
   KeyItem: 0
   Orderable: 1
   IsBeverage: 0
-  IsAlcohol: 0
+  HasAlcohol: 0
   HasMeat: 1
   HasMilk: 1

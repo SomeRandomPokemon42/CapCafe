@@ -106,8 +106,8 @@ public class CookingScript : MonoBehaviour
 		// Setup the timer
 		OutputSlots.AllowInteracting = false;
 		Cooking = true;
-		CraftingTimer = (WhatsCooking.CookTime * 60) / gameTime.TimeSpeed;
-		ProgressMeter.maxValue = (WhatsCooking.CookTime * 60) / gameTime.TimeSpeed;
+		CraftingTimer = (WhatsCooking.CookTime * 15 * 60) / gameTime.TimeSpeed;
+		ProgressMeter.maxValue = (WhatsCooking.CookTime * 15 * 60) / gameTime.TimeSpeed;
 		// Output the result
 		OutputSlotPreview.enabled = false;
 		OutputSlots.StoredItem = WhatsCooking.Result;

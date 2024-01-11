@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
-  m_Name: CaramelRecipe
+  m_Name: TapiocaRecipe
   m_EditorClassIdentifier: 
-  Result: {fileID: 11400000, guid: 9e12559f737573748b25e52ceb4d217c, type: 2}
+  Result: {fileID: 11400000, guid: 1e1389744f9b9734e872a0126189c58e, type: 2}
   Inputs:
+  - {fileID: 11400000, guid: 681bc680854781f4e8c06d56b84d3d33, type: 2}
   - {fileID: 11400000, guid: 43a62fd45a296f042aca5abc5249bda5, type: 2}
-  cookingType: 1
+  - {fileID: 11400000, guid: e9e9b0be5fa760e47b409cf1100fd65c, type: 2}
+  cookingType: 5
   CookTime: 1

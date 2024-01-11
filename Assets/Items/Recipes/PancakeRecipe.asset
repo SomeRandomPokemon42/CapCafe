@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
-  m_Name: CaramelRecipe
+  m_Name: PancakeRecipe
   m_EditorClassIdentifier: 
-  Result: {fileID: 11400000, guid: 9e12559f737573748b25e52ceb4d217c, type: 2}
+  Result: {fileID: 11400000, guid: 012d533aa6faffe4a80b0f09a7313df4, type: 2}
   Inputs:
+  - {fileID: 11400000, guid: e560ad83710b0684b968a2177ad1563b, type: 2}
+  - {fileID: 11400000, guid: d8ea35a34a5363445950eb4049bb4dff, type: 2}
   - {fileID: 11400000, guid: 43a62fd45a296f042aca5abc5249bda5, type: 2}
-  cookingType: 1
+  cookingType: 2
   CookTime: 1
