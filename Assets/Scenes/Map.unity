@@ -20273,6 +20273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 496312086}
   - component: {fileID: 496312087}
+  - component: {fileID: 496312088}
   m_Layer: 5
   m_Name: Cauldron
   m_TagString: Untagged
@@ -20349,6 +20350,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &496312088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496312085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9910aa621dedfcd428451367cc11a991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cookingType: 1
 --- !u!224 &511731454 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8055223890487274631, guid: 27d3c65e813c8284d8c5580b74b3b923, type: 3}
@@ -21246,6 +21260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572228428}
   - component: {fileID: 572228429}
+  - component: {fileID: 572228430}
   m_Layer: 5
   m_Name: Oven
   m_TagString: Untagged
@@ -21322,6 +21337,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &572228430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572228427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9910aa621dedfcd428451367cc11a991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cookingType: 3
 --- !u!1 &573981668
 GameObject:
   m_ObjectHideFlags: 0
@@ -36624,6 +36652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2105205089}
   - component: {fileID: 2105205090}
+  - component: {fileID: 2105205091}
   m_Layer: 5
   m_Name: FryingPan
   m_TagString: Untagged
@@ -36700,6 +36729,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &2105205091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105205088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9910aa621dedfcd428451367cc11a991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cookingType: 2
 --- !u!1 &2108189705
 GameObject:
   m_ObjectHideFlags: 0
