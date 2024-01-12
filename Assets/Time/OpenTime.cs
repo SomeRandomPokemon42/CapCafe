@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class OpenTime : MonoBehaviour
@@ -14,6 +15,9 @@ public class OpenTime : MonoBehaviour
 	public int CloseAt = 20;
 	[Header("Cafe")]
 	public bool Open = false;
+	[Header("Events")]
+	public UnityEvent CafeOpened = new UnityEvent();
+	public UnityEvent CafeClosed = new UnityEvent();
 
 	private void Start()
 	{
@@ -42,12 +46,14 @@ public class OpenTime : MonoBehaviour
 		MessWithGUI(true);
 		toast.Toast("The Cafe is now open!");
 		Open = true;
+		CafeOpened.Invoke();
 	}
 	public void CloseCafe()
 	{
 		MessWithGUI(false);
 		toast.Toast("The Cafe is now closed!");
 		Open = false;
+		CafeClosed.Invoke();
 	}
 
 	public void MessWithGUI(bool Open)
