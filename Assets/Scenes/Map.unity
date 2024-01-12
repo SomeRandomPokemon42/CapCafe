@@ -2762,7 +2762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 257513019}
   - component: {fileID: 257513020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftmostTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3962,7 +3962,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418300499}
   - component: {fileID: 418300500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21813,7 +21813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 601148320}
   - component: {fileID: 601148321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24244,7 +24244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861065148}
   - component: {fileID: 861065149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftmostChair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26478,7 +26478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 979947542}
   - component: {fileID: 979947543}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightmostTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35475,7 +35475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979384765}
   - component: {fileID: 1979384766}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiddleTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
