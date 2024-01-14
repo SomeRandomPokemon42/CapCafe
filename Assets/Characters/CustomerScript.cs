@@ -1,13 +1,33 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CustomerScript : MonoBehaviour
 {
+	//[Header("Personal")]
+	private enum VerbActions
+	{
+		EnteringHome,
+		ExittingHome,
+		GoHome,
+		Sitting,
+		GoingToCafe,
+		GoingToTown,
+		Idle //Original name was "WatchAnime", but apperantly thats not a good variable name...
+	}
+	private VerbActions WhatAmIDoing = VerbActions.Idle;
+	private bool HasCafed = false;
+	private float WaitTime = 0;
+	private int TownStops = 0;
+	private HouseScript House = null;
+	private TableScript Table = null;
+	//[Header("Connections")]
 	CafeDirections directions;
 	TimeScript GameTime;
 	StockMarketScript Stonks;
+	NavMeshAgent Me;
+	TownScript Town;
+	CapsuleCollider MyCollision;
 	[Header("Prefrences")]
 	bool AvoidMilk = false;
 	bool AvoidMeat = false;
@@ -20,6 +40,51 @@ public class CustomerScript : MonoBehaviour
 		GameTime = GameObject.FindGameObjectWithTag("GameController").GetComponent<TimeScript>();
 		directions = GameObject.FindGameObjectWithTag("GameController").GetComponent<Directions>().Cafe;
 		Stonks = GameTime.gameObject.GetComponent<StockMarketScript>();
+		Me = GetComponent<NavMeshAgent>();
+		MyCollision = GetComponent<CapsuleCollider>();
+		Town = GameTime.GetComponent<TownScript>();
+		Setup();
+	}
+
+	private Vector3 GetEntranceOffset(TownScript.Direction direction, bool opposite = false)
+	{
+		switch (direction)
+		{
+			case TownScript.Direction.up:
+				if (!opposite)
+				{
+					return Vector3.up;
+				} else
+				{
+					return Vector3.down;
+				}
+			case TownScript.Direction.down:
+				if (!opposite)
+				{
+					return Vector3.down;
+				} else
+				{
+					return Vector3.up;
+				}
+			case TownScript.Direction.left:
+				if (!opposite)
+				{
+					return Vector3.left;
+				} else
+				{
+					return Vector3.right;
+				}
+			case TownScript.Direction.right:
+				if (!opposite)
+				{
+					return Vector3.right;
+				} else
+				{
+					return Vector3.left;
+				}
+			default:
+				return Vector3.zero;
+		}
 	}
 
 	public void Setup() 
@@ -28,6 +93,89 @@ public class CustomerScript : MonoBehaviour
 		AvoidMeat = Random.value >= 0.9f; // 10% chance
 		AvoidAlcohol = Random.value >= 0.7f; // 30% chance
 		Budget = Random.Range(15, 175);
+		HasCafed = !GameTime.gameObject.GetComponent<OpenTime>().Open;
+		TownStops = Random.Range(1, 7);
+		House = Town.GimmeAHouse();
+		transform.position = House.EntrancePosition + 2 * GetEntranceOffset(House.Direction);
+		MyCollision.enabled = false;
+		WhatAmIDoing = VerbActions.ExittingHome;
+		Me.destination = House.EntrancePosition;
+	}
+
+	private void Update()
+	{
+		if (WhatAmIDoing == VerbActions.Idle)
+		{
+			Decide(); // Wish it was this easy IRL. 
+		}
+		if (Vector3.Distance(Me.destination, new Vector3(transform.position.x, 0, transform.position.z)) < 0.1f)
+		{
+			if (WhatAmIDoing != VerbActions.Idle || WhatAmIDoing == VerbActions.Idle && WaitTime <= 0)
+			{
+				IHaveArrived();
+			}
+		}
+		if (WaitTime > 0)
+		{
+			WaitTime -= Time.deltaTime * GameTime.TimeSpeed;
+		}
+	}
+
+	private void Decide()
+	{
+		if (!HasCafed && Random.value < 0.10f + Mathf.Clamp(Town.CafePopularity/10f, -0.08f, 0.44f))
+		{ // Chance caps at 64% and lowcaps at 2%... Decided randomly in case you were curious
+			Me.SetDestination(directions.DecisionPoint);
+			WhatAmIDoing = VerbActions.GoingToCafe;
+			HasCafed = true;
+			return;
+		}
+		if (TownStops > 0 && Random.value > 0.3333)
+		{
+			WhatAmIDoing = VerbActions.GoingToTown;
+			Me.SetDestination(Town.GimmeSomewhereToGo());
+			return;
+		}
+		// Man, idk, go home and cry
+		WhatAmIDoing = VerbActions.GoHome;
+		Me.SetDestination(House.EntrancePosition);
+	}
+
+	public void IHaveArrived()
+	{
+		switch(WhatAmIDoing)
+		{
+			case VerbActions.GoingToCafe:
+				if (!EnterTheCafe())
+				{
+					Town.Complain();
+					WhatAmIDoing = VerbActions.Idle;
+					return;
+				} else
+				{
+
+				}
+				break;
+			case VerbActions.ExittingHome:
+				MyCollision.enabled = true;
+				WhatAmIDoing = VerbActions.Idle;
+				break;
+			case VerbActions.EnteringHome:
+				Destroy(gameObject);
+				break;
+			case VerbActions.GoingToTown:
+				WhatAmIDoing = VerbActions.Sitting;
+				WaitTime = GameTime.TimeSpeed * Random.value;
+				break;
+			case VerbActions.GoHome:
+				MyCollision.enabled = false;
+				WhatAmIDoing = VerbActions.EnteringHome;
+				Me.SetDestination(GetEntranceOffset(House.Direction, true));
+				break;
+			default:
+				WhatAmIDoing = VerbActions.Idle;
+				break;
+		}
 	}
 
 	public bool EnterTheCafe()
@@ -94,6 +242,9 @@ public class CustomerScript : MonoBehaviour
 		{
 			desiredItems[1] = AllowedItems[Random.Range(0, AllowedItems.Count)];
 		}
+		Table = directions.GetFirstFreeTable();
+		Me.SetDestination(Table.SittingPosition);
+		Table.OccupiedBy = this;
 		return true;
 	}
 }
