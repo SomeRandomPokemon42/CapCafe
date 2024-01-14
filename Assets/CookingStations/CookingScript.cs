@@ -67,6 +67,7 @@ public class CookingScript : MonoBehaviour
 	}
 	private bool CanModifyOutputWithThis(out Recipe WhatsCooking)
 	{
+		// Tells you whether or not the recipe meets the requirements to cook right now
 		WhatsCooking = null;
 		if (OutputSlots.StoredItem != null || Cooking)
 		{
@@ -79,7 +80,7 @@ public class CookingScript : MonoBehaviour
 		}
 		return true;
 	}
-	private void PreviewCooking()
+	public void PreviewCooking()
 	{
 		if (!CanModifyOutputWithThis(out Recipe WhatsCooking))
 		{

@@ -19,6 +19,7 @@ public class SwapCookingType : MonoBehaviour
 		if (NewValue)
 		{
 			cookingScript.cookingType = cookingType;
+			cookingScript.PreviewCooking();
 		}
 	}
 }
