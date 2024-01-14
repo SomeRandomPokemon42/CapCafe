@@ -81,8 +81,7 @@ public class CookingScript : MonoBehaviour
 	}
 	private void PreviewCooking()
 	{
-		Recipe WhatsCooking = null;
-		if (!CanModifyOutputWithThis(out WhatsCooking))
+		if (!CanModifyOutputWithThis(out Recipe WhatsCooking))
 		{
 			OutputSlotPreview.enabled = false;
 			return;
@@ -93,8 +92,7 @@ public class CookingScript : MonoBehaviour
 	private void LetEmCook()
 	{
 		// Check if we can do this
-		Recipe WhatsCooking = null;
-		if (!CanModifyOutputWithThis(out WhatsCooking))
+		if (!CanModifyOutputWithThis(out Recipe WhatsCooking))
 		{
 			return;
 		}

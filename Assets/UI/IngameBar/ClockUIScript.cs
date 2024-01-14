@@ -44,7 +44,7 @@ public class ClockUIScript : MonoBehaviour
 		}
 	}
 
-	private void updateDigital(int inphour, int inpminute, bool doAMPM)
+	private void UpdateDigital(int inphour, int inpminute, bool doAMPM)
 	{
 		string zsuffix = "";
 		string zhour = inphour.ToString();
@@ -71,7 +71,7 @@ public class ClockUIScript : MonoBehaviour
 		}
 		TextMesh.text = zhour + ":" + zminute + zsuffix;
 	}
-	private void updateAnalog(bool HasMinute, bool HasHour, int inphour, int inpminute)
+	private void UpdateAnalog(bool HasMinute, bool HasHour, int inphour, int inpminute)
 	{
 		if (HasMinute)
 		{
@@ -96,11 +96,11 @@ public class ClockUIScript : MonoBehaviour
 			lastminute = minute;
 			if (DigitalClock)
 			{
-				updateDigital(hour, minute, !Do24HourTime);
+				UpdateDigital(hour, minute, !Do24HourTime);
 			}
 			if (AnalogClock)
 			{
-				updateAnalog(HourHand != null, MinuteHand != null, hour, minute);
+				UpdateAnalog(HourHand != null, MinuteHand != null, hour, minute);
 			}
 		}
 	}
