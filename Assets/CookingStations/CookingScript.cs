@@ -54,7 +54,7 @@ public class CookingScript : MonoBehaviour
 	{
 		if (CraftingTimer > 0)
 		{
-			CraftingTimer -= Time.deltaTime;
+			CraftingTimer -= Time.deltaTime * gameTime.TimeSpeed;
 			ProgressMeter.value = ProgressMeter.maxValue - CraftingTimer;
 			if (CraftingTimer <= 0)
 			{
@@ -106,8 +106,8 @@ public class CookingScript : MonoBehaviour
 		// Setup the timer
 		OutputSlots.AllowInteracting = false;
 		Cooking = true;
-		CraftingTimer = (WhatsCooking.CookTime * 15 * 60) / gameTime.TimeSpeed;
-		ProgressMeter.maxValue = (WhatsCooking.CookTime * 15 * 60) / gameTime.TimeSpeed;
+		CraftingTimer = (WhatsCooking.CookTime * 15 * 60);
+		ProgressMeter.maxValue = (WhatsCooking.CookTime * 15 * 60);
 		// Output the result
 		OutputSlotPreview.enabled = false;
 		OutputSlots.StoredItem = WhatsCooking.Result;
