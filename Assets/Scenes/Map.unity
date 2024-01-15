@@ -21519,7 +21519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8831d304a69cd2048a358d59b6a0bb1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 100
+  amount: 150
 --- !u!114 &527184847
 MonoBehaviour:
   m_ObjectHideFlags: 0
