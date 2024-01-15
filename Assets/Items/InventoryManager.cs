@@ -89,6 +89,18 @@ public class InventoryManager : MonoBehaviour
 		Leftover = Leftovers.ToArray();
 		return Leftover.Length != 0;
 	}
+	public bool RemoveItem(GameItem item)
+	{
+		foreach (InventorySlot slot in inventorySlots)
+		{
+			if (slot.StoredItem.Equals(item))
+			{
+				slot.StoredItem = null;
+				return true;
+			}
+		}
+		return false;
+	}
 
 	public GameItem[] ClearItems()
 	{

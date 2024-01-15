@@ -19,17 +19,28 @@ public class RecipeBook : MonoBehaviour
 		List<Recipe> output = new();
 
 		foreach (Recipe recipe in AllowedRecipes)
+		{
+			if (recipe == null)
+			{
+				Debug.LogError("There's a null object in the RecipeBook!!! This is extremely likely to break something!!!");
+				continue;
+			}
 			if (recipe.cookingType == RecipeType)
 			{
 				output.Add(recipe);
 			}
-
+		}
 		return output;
 	}
 	public Recipe GetWhatsCooking(CookingType RecipeType, GameItem[] items)
 	{
 		foreach (Recipe recipe in AllowedRecipes)
 		{
+			if (recipe == null)
+			{
+				Debug.LogError("There's a null object in the RecipeBook!!! This is extremely likely to break something!!!");
+				continue;
+			}
 			if (recipe.cookingType == RecipeType && recipe.CompareIngredients(items))
 			{
 				return recipe;

@@ -21,6 +21,7 @@ public class CustomerScript : MonoBehaviour
 	private int TownStops = 0;
 	private HouseScript House = null;
 	private TableScript Table = null;
+	private int OwedMoney = 0;
 	//[Header("Connections")]
 	CafeDirections directions;
 	TimeScript GameTime;
@@ -162,10 +163,15 @@ public class CustomerScript : MonoBehaviour
 				{
 					Town.Complain();
 					WhatAmIDoing = VerbActions.Idle;
+					RequestBox.SetActive(false);
+					directions.SendMoneyToPlayer(OwedMoney);
+					OwedMoney = 0;
+					Table.OccupiedBy = null;
 					return;
 				} else
 				{
-					
+					WhatAmIDoing = VerbActions.Sitting;
+					WaitTime = 10f + Random.value * 10;
 				}
 				break;
 			case VerbActions.ExittingHome:
@@ -257,6 +263,35 @@ public class CustomerScript : MonoBehaviour
 		Table = directions.GetFirstFreeTable();
 		Me.SetDestination(Table.SittingPosition);
 		Table.OccupiedBy = this;
+		RequestBox.SetActive(true);
+		RequestA.sprite = desiredItems[0].Icon;
+		RequestB.sprite = desiredItems[1].Icon;
 		return true;
+	}
+
+	public void InteractedWith()
+	{
+		InventoryManager PlayerInventory = GameObject.FindGameObjectWithTag("GameController").GetComponent<Directions>().PlayerInventory;
+		if (desiredItems[0] != null && PlayerInventory.RemoveItem(desiredItems[0]))
+		{
+			OwedMoney += Stonks.STONKS(desiredItems[0]);
+			desiredItems[0] = null;
+			RequestA.sprite = directions.CheckSprite;
+		}
+		if (desiredItems[1] != null && PlayerInventory.RemoveItem(desiredItems[1]))
+		{
+			OwedMoney += Stonks.STONKS(desiredItems[1]);
+			desiredItems[1] = null;
+			RequestB.sprite = directions.CheckSprite;
+		}
+		if (null == desiredItems[1] && desiredItems[0] == null)
+		{
+			OwedMoney += Mathf.RoundToInt(WaitTime / 5);
+			RequestBox.SetActive(false);
+			directions.SendMoneyToPlayer(OwedMoney);
+			OwedMoney = 0;
+			WhatAmIDoing = VerbActions.Idle;
+			Table.OccupiedBy = null;
+		}
 	}
 }

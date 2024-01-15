@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd2ede18e140ee4b89816930966c36f, type: 3}
   m_Name: GreenTea
   m_EditorClassIdentifier: 
-  Name: Tea Leaves
-  Icon: {fileID: 887943602, guid: b16df256e87197348bab658959d7f541, type: 3}
+  Name: Green Tea
+  Icon: {fileID: -1607250996, guid: ef5c07cd18a8f724aa87fbf56b330e7c, type: 3}
   BaseValue: 6
   Sellable: 1
   KeyItem: 0
-  Orderable: 0
+  Orderable: 1
   IsBeverage: 1
   HasAlcohol: 0
   HasMeat: 0
