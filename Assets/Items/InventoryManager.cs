@@ -25,7 +25,7 @@ public class InventoryManager : MonoBehaviour
 		SelectedSlot = slot;
 		if (!Bounced && SecondInventory != null)
 		{
-			SecondInventory.DeselectOldSlot(Bounced:true);
+			SecondInventory.DeselectOldSlot(Bounced: true);
 		}
 	}
 
@@ -43,7 +43,7 @@ public class InventoryManager : MonoBehaviour
 
 	public bool AddItem(GameItem Item)
 	{
-		if (OnlyAllowOrderables && !Item.Orderable) {return false;}
+		if (OnlyAllowOrderables && !Item.Orderable) { return false; }
 		InventorySlot slot = GetFirstFreeSlot();
 		if (slot == null)
 		{
@@ -63,14 +63,16 @@ public class InventoryManager : MonoBehaviour
 			{
 				cat--;
 				itemindex++;
-			} else if (slot.StoredItem == null && !slot.OutputOnlySlot && itemindex < Items.Length)
+			}
+			else if (slot.StoredItem == null && !slot.OutputOnlySlot && itemindex < Items.Length)
 			{
 				if (!Items[itemindex].Orderable && OnlyAllowOrderables)
 				{
 					Leftovers.Add(Items[itemindex]);
 					itemindex++;
 					cat--;
-				} else
+				}
+				else
 				{
 					slot.StoredItem = Items[itemindex];
 					itemindex++;
@@ -87,11 +89,23 @@ public class InventoryManager : MonoBehaviour
 		Leftover = Leftovers.ToArray();
 		return Leftover.Length != 0;
 	}
+	public bool RemoveItem(GameItem item)
+	{
+		foreach (InventorySlot slot in inventorySlots)
+		{
+			if (slot.StoredItem.Equals(item))
+			{
+				slot.StoredItem = null;
+				return true;
+			}
+		}
+		return false;
+	}
 
 	public GameItem[] ClearItems()
 	{
 		List<GameItem> items = new();
-		foreach(InventorySlot slot in inventorySlots)
+		foreach (InventorySlot slot in inventorySlots)
 		{
 			if (slot.StoredItem != null)
 			{

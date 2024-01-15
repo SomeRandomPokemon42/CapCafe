@@ -44,6 +44,7 @@ public class Toaster : MonoBehaviour
 				{
 					ToastTimeRemaining = ToastTime;
 					step = Step.WaitingForTimer;
+					Popup.GetComponent<AudioSource>().Play();
 				}
 				break;
 			case Step.WaitingForTimer:

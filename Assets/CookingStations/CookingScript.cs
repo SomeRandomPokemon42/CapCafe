@@ -54,7 +54,7 @@ public class CookingScript : MonoBehaviour
 	{
 		if (CraftingTimer > 0)
 		{
-			CraftingTimer -= Time.deltaTime;
+			CraftingTimer -= Time.deltaTime * gameTime.TimeSpeed;
 			ProgressMeter.value = ProgressMeter.maxValue - CraftingTimer;
 			if (CraftingTimer <= 0)
 			{
@@ -67,6 +67,7 @@ public class CookingScript : MonoBehaviour
 	}
 	private bool CanModifyOutputWithThis(out Recipe WhatsCooking)
 	{
+		// Tells you whether or not the recipe meets the requirements to cook right now
 		WhatsCooking = null;
 		if (OutputSlots.StoredItem != null || Cooking)
 		{
@@ -79,10 +80,9 @@ public class CookingScript : MonoBehaviour
 		}
 		return true;
 	}
-	private void PreviewCooking()
+	public void PreviewCooking()
 	{
-		Recipe WhatsCooking = null;
-		if (!CanModifyOutputWithThis(out WhatsCooking))
+		if (!CanModifyOutputWithThis(out Recipe WhatsCooking))
 		{
 			OutputSlotPreview.enabled = false;
 			return;
@@ -93,8 +93,7 @@ public class CookingScript : MonoBehaviour
 	private void LetEmCook()
 	{
 		// Check if we can do this
-		Recipe WhatsCooking = null;
-		if (!CanModifyOutputWithThis(out WhatsCooking))
+		if (!CanModifyOutputWithThis(out Recipe WhatsCooking))
 		{
 			return;
 		}
@@ -106,8 +105,8 @@ public class CookingScript : MonoBehaviour
 		// Setup the timer
 		OutputSlots.AllowInteracting = false;
 		Cooking = true;
-		CraftingTimer = (WhatsCooking.CookTime * 15 * 60) / gameTime.TimeSpeed;
-		ProgressMeter.maxValue = (WhatsCooking.CookTime * 15 * 60) / gameTime.TimeSpeed;
+		CraftingTimer = (WhatsCooking.CookTime * 15 * 60);
+		ProgressMeter.maxValue = (WhatsCooking.CookTime * 15 * 60);
 		// Output the result
 		OutputSlotPreview.enabled = false;
 		OutputSlots.StoredItem = WhatsCooking.Result;

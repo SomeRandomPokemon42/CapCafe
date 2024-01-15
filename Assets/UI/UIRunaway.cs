@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class UIRunaway : MonoBehaviour
 {
@@ -29,7 +26,8 @@ public class UIRunaway : MonoBehaviour
 			{
 				scanning = true;
 				RunProgress = 0;
-			} else
+			}
+			else
 			{
 				if (RunProgress > RunawayDistance)
 				{

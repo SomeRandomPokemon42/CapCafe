@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce0e4208ce9abc408d2bcbf939fcd3a, type: 3}
   m_Name: SushiRecipe
   m_EditorClassIdentifier: 
-  Result: {fileID: 11400000, guid: d21b89296e5cc034395833591098dd3a, type: 2}
+  Result: {fileID: 11400000, guid: a8c73ca0db823554893f87208c2870d3, type: 2}
   Inputs:
   - {fileID: 11400000, guid: c4804bf1b8d3e5a4590b968219780b25, type: 2}
   - {fileID: 11400000, guid: 0ee5bb5483eb7754caf028c7728c8762, type: 2}

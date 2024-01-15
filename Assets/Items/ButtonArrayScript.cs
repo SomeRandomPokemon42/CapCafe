@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -50,6 +48,10 @@ public class ButtonArrayScript : MonoBehaviour
 	}
 	public void MoveButton()
 	{
+		if (Manager.SecondInventory == null)
+		{
+			return;
+		}
 		if (Manager.SecondInventory.AddItem(ThisSlot.StoredItem))
 		{
 			ThisSlot.StoredItem = null;

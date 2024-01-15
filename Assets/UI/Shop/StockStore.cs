@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,11 +30,12 @@ public class StockStore : MonoBehaviour
 		if (HowMany < 1 || ShiftWhen < 1 || Varience < 0)
 		{
 			ShopUI.StockShop(ItemsToStock.ToArray());
-		} else if (StoredStock.Count == 0)
+		}
+		else if (StoredStock.Count == 0)
 		{
-			int StockCount = HowMany + Random.Range(-Varience, Varience+1);
+			int StockCount = HowMany + Random.Range(-Varience, Varience + 1);
 			if (StockCount <= 0) { StockCount = 1; }
-			if (StockCount > ItemsToStock.Count) {StockCount = ItemsToStock.Count;}
+			if (StockCount > ItemsToStock.Count) { StockCount = ItemsToStock.Count; }
 			for (int i = 0; i < StockCount; i++)
 			{
 				int potentialItem = Random.Range(0, ItemsToStock.Count);
@@ -43,12 +43,14 @@ public class StockStore : MonoBehaviour
 				{
 					i--;
 					continue;
-				} else
+				}
+				else
 				{
 					StoredStock.Add(ItemsToStock[potentialItem]);
 				}
 			}
-		} else
+		}
+		else
 		{
 			ShopUI.StockShop(StoredStock.ToArray());
 		}

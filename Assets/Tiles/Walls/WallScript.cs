@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WallScript : MonoBehaviour
@@ -30,7 +28,8 @@ public class WallScript : MonoBehaviour
 		if (Shown)
 		{
 			progress += Time.deltaTime * Speed;
-		} else
+		}
+		else
 		{
 			progress -= Time.deltaTime * Speed;
 		}

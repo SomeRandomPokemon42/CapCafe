@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -37,7 +35,7 @@ public class PriceTagScript : MonoBehaviour
 		if (Price != OldPrice)
 		{
 			OldPrice = Price;
-			Tuple<int,int,int,int> cost = PlayerMoney.CoinConversion(Price);
+			Tuple<int, int, int, int> cost = PlayerMoney.CoinConversion(Price);
 			CopperText.text = cost.Item1.ToString();
 			SilverText.text = cost.Item2.ToString();
 			GoldText.text = cost.Item3.ToString();
@@ -47,7 +45,8 @@ public class PriceTagScript : MonoBehaviour
 				PlatinumText.enabled = false;
 				PlatinumImage.enabled = false;
 				PlatinumElement.ignoreLayout = true;
-			} else
+			}
+			else
 			{
 				PlatinumText.enabled = true;
 				PlatinumImage.enabled = true;
@@ -63,7 +62,7 @@ public class PriceTagScript : MonoBehaviour
 			{
 				GoldText.enabled = true;
 				GoldImage.enabled = true;
-				GoldElement.ignoreLayout= false;
+				GoldElement.ignoreLayout = false;
 			}
 			if (cost.Item2 == 0)
 			{
@@ -82,7 +81,8 @@ public class PriceTagScript : MonoBehaviour
 				CopperText.enabled = false;
 				CopperImage.enabled = false;
 				CopperElement.ignoreLayout = true;
-			} else
+			}
+			else
 			{
 				CopperText.enabled = true;
 				CopperImage.enabled = true;

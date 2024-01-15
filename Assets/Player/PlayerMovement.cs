@@ -1,6 +1,5 @@
-using UnityEngine.InputSystem;
 using UnityEngine;
-using System;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,24 +8,25 @@ public class PlayerMovement : MonoBehaviour
 	private SpriteAnimations AnimationFix;
 	public bool MovementLocked = false;
 
-    private void Awake()
-    {
+	private void Awake()
+	{
 		AnimationFix = GetComponentInChildren<SpriteAnimations>();
-    }
-    public void WASD(InputAction.CallbackContext context)
+	}
+	public void WASD(InputAction.CallbackContext context)
 	{
 		if (!MovementLocked)
 		{
-            //Movement
-            inputtedVector = context.ReadValue<Vector2>();
+			//Movement
+			inputtedVector = context.ReadValue<Vector2>();
 			//Animation
-            if (AnimationFix != null)
-            {
-                AnimationFix.MovementVector = inputtedVector;
-            }
-        } else
+			if (AnimationFix != null)
+			{
+				AnimationFix.MovementVector = inputtedVector;
+			}
+		}
+		else
 		{
-			inputtedVector = new Vector2 (0, 0);
+			inputtedVector = new Vector2(0, 0);
 		}
 	}
 
@@ -35,10 +35,11 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if (MovementLocked)
 		{
-			inputtedVector = new Vector2(0,0);
-		} else
+			inputtedVector = new Vector2(0, 0);
+		}
+		else
 		{
-            transform.Translate(new Vector3(inputtedVector.x, 0, inputtedVector.y) * Time.deltaTime * speed);
-        }
+			transform.Translate(new Vector3(inputtedVector.x, 0, inputtedVector.y) * Time.deltaTime * speed);
+		}
 	}
 }
