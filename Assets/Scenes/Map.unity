@@ -21447,6 +21447,7 @@ GameObject:
   - component: {fileID: 527184849}
   - component: {fileID: 527184850}
   - component: {fileID: 527184851}
+  - component: {fileID: 527184852}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -21667,6 +21668,76 @@ MonoBehaviour:
   - {x: -4.5, y: 0, z: -10.5}
   CafePopularity: 0
   CafeSalt: 0
+--- !u!114 &527184852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527184842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd40701899445c8499578ab6e3d865c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Humans:
+  - {fileID: 7075817244966659898, guid: e4c00145b9b9cc245b1b1f250602df54, type: 3}
+  - {fileID: 983338791072163168, guid: 38416547237ed694193a280595f002f7, type: 3}
+  - {fileID: 4588114115732347750, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
+  - {fileID: 7469870756028407333, guid: 777090d569544c14fbabe5d9e6fa7e75, type: 3}
+  HumanRate:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0.00012527194
+      outSlope: 0.00012527194
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 6.0008154
+      value: 1.0007517
+      inSlope: 0.009393777
+      outSlope: 0.4883428
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.5910776
+      outWeight: 0.36430398
+    - serializedVersion: 3
+      time: 11.998902
+      value: 5.0041075
+      inSlope: 0.3346559
+      outSlope: 0.3346559
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 17.107063
+      value: 5.013675
+      inSlope: 1.0135354
+      outSlope: -1.5630364
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.22367686
+      outWeight: 0.106976934
+    - serializedVersion: 3
+      time: 23.997803
+      value: 1
+      inSlope: -0.00958297
+      outSlope: -0.00958297
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.7020781
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  PersonCooldown: 0
+  Modfier: 2
 --- !u!1 &529722186
 GameObject:
   m_ObjectHideFlags: 0
@@ -21756,63 +21827,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 79774978260581612, guid: 3956f004e42ded0488c932940e7282c6, type: 3}
   m_PrefabInstance: {fileID: 1015635447}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &534239820
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.1023929
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.010000229
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.34340143
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3881768433617061226, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4588114115732347750, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
-      propertyPath: m_Name
-      value: Miku
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 39a61af77ddf10642a0035503df543f6, type: 3}
 --- !u!1 &540696904
 GameObject:
   m_ObjectHideFlags: 0
@@ -41466,4 +41480,3 @@ SceneRoots:
   - {fileID: 1360098819651496127}
   - {fileID: 253214823}
   - {fileID: 527184844}
-  - {fileID: 534239820}

@@ -28,6 +28,9 @@ public class CustomerScript : MonoBehaviour
 	NavMeshAgent Me;
 	TownScript Town;
 	CapsuleCollider MyCollision;
+	GameObject RequestBox;
+	SpriteRenderer RequestA;
+	SpriteRenderer RequestB;
 	[Header("Prefrences")]
 	bool AvoidMilk = false;
 	bool AvoidMeat = false;
@@ -43,6 +46,10 @@ public class CustomerScript : MonoBehaviour
 		Me = GetComponent<NavMeshAgent>();
 		MyCollision = GetComponent<CapsuleCollider>();
 		Town = GameTime.GetComponent<TownScript>();
+		RequestBox = transform.GetComponentInChildren<BillboardScript>().gameObject;
+		RequestA = RequestBox.transform.GetChild(0).GetComponent<SpriteRenderer>();
+		RequestB = RequestBox.transform.GetChild(1).GetComponent<SpriteRenderer>();
+		RequestBox.SetActive(false);
 		Setup();
 	}
 
@@ -96,7 +103,7 @@ public class CustomerScript : MonoBehaviour
 		HasCafed = !GameTime.gameObject.GetComponent<OpenTime>().Open;
 		TownStops = Random.Range(1, 7);
 		House = Town.GimmeAHouse();
-		transform.position = House.EntrancePosition + 3 * GetEntranceOffset(House.Direction);
+		transform.position = House.EntrancePosition + 3 * GetEntranceOffset(House.Direction, true);
 		MyCollision.enabled = false;
 		WhatAmIDoing = VerbActions.ExittingHome;
 		Me.destination = House.EntrancePosition;
