@@ -104,7 +104,7 @@ public class CustomerScript : MonoBehaviour
 		HasCafed = !GameTime.gameObject.GetComponent<OpenTime>().Open;
 		TownStops = Random.Range(1, 7);
 		House = Town.GimmeAHouse();
-		transform.position = House.EntrancePosition + 3 * GetEntranceOffset(House.Direction, true);
+		transform.position = House.EntrancePosition + (3 * GetEntranceOffset(House.Direction, true));
 		MyCollision.enabled = false;
 		WhatAmIDoing = VerbActions.ExittingHome;
 		Me.destination = House.EntrancePosition;
@@ -123,7 +123,7 @@ public class CustomerScript : MonoBehaviour
 		}
 		if (Vector3.Distance(Me.destination, new Vector3(transform.position.x, 0, transform.position.z)) < 0.1f && GetCumulative(Me.velocity) < 0.1f)
 		{
-			if (WhatAmIDoing != VerbActions.Sitting || WhatAmIDoing == VerbActions.Sitting && WaitTime <= 0)
+			if (WhatAmIDoing != VerbActions.Sitting || (WhatAmIDoing == VerbActions.Sitting && WaitTime <= 0))
 			{
 				IHaveArrived();
 			}
@@ -158,6 +158,21 @@ public class CustomerScript : MonoBehaviour
 	{
 		switch(WhatAmIDoing)
 		{
+			case VerbActions.Sitting:
+				if (WaitTime > 0)
+				{
+					return;
+				}
+				if (Table != null)
+				{
+					RequestBox.SetActive(false);
+					directions.SendMoneyToPlayer(OwedMoney);
+					OwedMoney = 0;
+					Table.OccupiedBy = null;
+					Table = null;
+				}
+				WhatAmIDoing = VerbActions.Idle;
+				break;
 			case VerbActions.GoingToCafe:
 				if (!EnterTheCafe())
 				{
@@ -166,12 +181,11 @@ public class CustomerScript : MonoBehaviour
 					RequestBox.SetActive(false);
 					directions.SendMoneyToPlayer(OwedMoney);
 					OwedMoney = 0;
-					Table.OccupiedBy = null;
 					return;
 				} else
 				{
 					WhatAmIDoing = VerbActions.Sitting;
-					WaitTime = 10f + Random.value * 10;
+					WaitTime = (10f + Random.value * 10) * GameTime.TimeSpeed;
 				}
 				break;
 			case VerbActions.ExittingHome:
@@ -188,7 +202,7 @@ public class CustomerScript : MonoBehaviour
 			case VerbActions.GoHome:
 				MyCollision.enabled = false;
 				WhatAmIDoing = VerbActions.EnteringHome;
-				Me.SetDestination(GetEntranceOffset(House.Direction, true)*3 + House.EntrancePosition);
+				Me.SetDestination((GetEntranceOffset(House.Direction, true) * 3) + House.EntrancePosition);
 				break;
 			default:
 				WhatAmIDoing = VerbActions.Idle;
@@ -248,17 +262,21 @@ public class CustomerScript : MonoBehaviour
 		if (whatDoIActuallyGet <= 0.85)
 		{
 			desiredItems[0] = AllowedDrinks[Random.Range(0, AllowedDrinks.Count)];
+			AllowedDrinks.Remove(desiredItems[0]);
 		} else
 		{
 			desiredItems[0] = AllowedItems[Random.Range(0, AllowedItems.Count)];
+			AllowedItems.Remove(desiredItems[0]);
 		}
 		// Second item
 		if (whatDoIActuallyGet <= 0.85 && whatDoIActuallyGet > 0.5)
 		{
 			desiredItems[1] = AllowedDrinks[Random.Range(0, AllowedDrinks.Count)];
+			AllowedDrinks.Remove(desiredItems[0]);
 		} else
 		{
 			desiredItems[1] = AllowedItems[Random.Range(0, AllowedItems.Count)];
+			AllowedItems.Remove(desiredItems[1]);
 		}
 		Table = directions.GetFirstFreeTable();
 		Me.SetDestination(Table.SittingPosition);
@@ -271,27 +289,31 @@ public class CustomerScript : MonoBehaviour
 
 	public void InteractedWith()
 	{
-		InventoryManager PlayerInventory = GameObject.FindGameObjectWithTag("GameController").GetComponent<Directions>().PlayerInventory;
-		if (desiredItems[0] != null && PlayerInventory.RemoveItem(desiredItems[0]))
+		if (WhatAmIDoing == VerbActions.Sitting && desiredItems != null)
 		{
-			OwedMoney += Stonks.STONKS(desiredItems[0]);
-			desiredItems[0] = null;
-			RequestA.sprite = directions.CheckSprite;
-		}
-		if (desiredItems[1] != null && PlayerInventory.RemoveItem(desiredItems[1]))
-		{
-			OwedMoney += Stonks.STONKS(desiredItems[1]);
-			desiredItems[1] = null;
-			RequestB.sprite = directions.CheckSprite;
-		}
-		if (null == desiredItems[1] && desiredItems[0] == null)
-		{
-			OwedMoney += Mathf.RoundToInt(WaitTime / 5);
-			RequestBox.SetActive(false);
-			directions.SendMoneyToPlayer(OwedMoney);
-			OwedMoney = 0;
-			WhatAmIDoing = VerbActions.Idle;
-			Table.OccupiedBy = null;
+			InventoryManager PlayerInventory = GameObject.FindGameObjectWithTag("GameController").GetComponent<Directions>().PlayerInventory;
+			if (desiredItems[0] != null && PlayerInventory.RemoveItem(desiredItems[0]))
+			{
+				OwedMoney += Stonks.STONKS(desiredItems[0]);
+				desiredItems[0] = null;
+				RequestA.sprite = directions.CheckSprite;
+			}
+			if (desiredItems[1] != null && PlayerInventory.RemoveItem(desiredItems[1]))
+			{
+				OwedMoney += Stonks.STONKS(desiredItems[1]);
+				desiredItems[1] = null;
+				RequestB.sprite = directions.CheckSprite;
+			}
+			if (null == desiredItems[1] && desiredItems[0] == null)
+			{
+				OwedMoney += Mathf.RoundToInt(WaitTime / 5);
+				RequestBox.SetActive(false);
+				directions.SendMoneyToPlayer(OwedMoney);
+				OwedMoney = 0;
+				WhatAmIDoing = VerbActions.Idle;
+				Table.OccupiedBy = null;
+				Table = null;
+			}
 		}
 	}
 }

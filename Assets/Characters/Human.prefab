@@ -319,10 +319,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4521a6f40a94874c9fa57a247d0dc60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Disabled: 1
+  Disabled: 0
   TriggerThis:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2669615931594518491}
+        m_TargetAssemblyTypeName: CustomerScript, Assembly-CSharp
+        m_MethodName: InteractedWith
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4834924491761212162
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,6 +31,11 @@ public class UIRunaway : MonoBehaviour
 			{
 				if (RunProgress > RunawayDistance)
 				{
+					InventoryManager MyInventory = GetComponentInChildren<InventoryManager>();
+					if (MyInventory != null && MyInventory.MyStorage != null)
+					{
+						MyInventory.MyStorage.OnClose();
+					}
 					UI.DisableUI();
 					PlayerInventory.SecondInventory = null;
 					scanning = false;

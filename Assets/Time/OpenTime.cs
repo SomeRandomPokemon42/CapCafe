@@ -16,8 +16,8 @@ public class OpenTime : MonoBehaviour
 	[Header("Cafe")]
 	public bool Open = false;
 	[Header("Events")]
-	public UnityEvent CafeOpened = new UnityEvent();
-	public UnityEvent CafeClosed = new UnityEvent();
+	public UnityEvent CafeOpened = new();
+	public UnityEvent CafeClosed = new();
 
 	private void Start()
 	{
