@@ -20,5 +20,6 @@ public class StorageObject : MonoBehaviour
 	public void OnClose()
 	{
 		storedItems = inventoryManager.ClearItems();
+		Adjusted.Invoke();
 	}
 }
