@@ -4,7 +4,7 @@ A cafe management simulator where you play as a catgirl who has just come into p
 
 This is my capstone project for a unity development course.
 
-This uses material I didn't make myself, as such, this project will always remain free
+This uses material I didn't make myself, as such, this project will always remain free (also its on github lol)
 
 # Credits
 
@@ -21,8 +21,8 @@ All other art by SomeRandomPokemon42.
 
 ## Characters:
 Some customer characters are references to other media, which I will list here.
-Izuna Kuda, from Blue Archive
-John Bradford, from XCOM
+Izuna Kuda, from Blue Archive.
+John Bradford, from XCOM.
 Hatsune Miku...
 
 ## Code:
