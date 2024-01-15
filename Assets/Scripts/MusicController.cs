@@ -10,7 +10,7 @@ public class MusicController : MonoBehaviour
 
 	//Crossfade
 	private float CrossfadeTime = 0f;
-	private bool Faded;
+	private bool Faded = false;
 
 	private void Start()
 	{
@@ -38,6 +38,9 @@ public class MusicController : MonoBehaviour
 				}
 				source.volume = 1 - (CrossfadeTime - 1);
 			}
+		} else
+		{
+			Faded = false;
 		}
 	}
 
