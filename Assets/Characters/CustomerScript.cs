@@ -96,10 +96,15 @@ public class CustomerScript : MonoBehaviour
 		HasCafed = !GameTime.gameObject.GetComponent<OpenTime>().Open;
 		TownStops = Random.Range(1, 7);
 		House = Town.GimmeAHouse();
-		transform.position = House.EntrancePosition + 2 * GetEntranceOffset(House.Direction);
+		transform.position = House.EntrancePosition + 3 * GetEntranceOffset(House.Direction);
 		MyCollision.enabled = false;
 		WhatAmIDoing = VerbActions.ExittingHome;
 		Me.destination = House.EntrancePosition;
+	}
+
+	private static float GetCumulative(Vector3 inputedVector)
+	{
+		return Mathf.Abs(inputedVector.x) + Mathf.Abs(inputedVector.y) + Mathf.Abs(inputedVector.z);
 	}
 
 	private void Update()
@@ -108,9 +113,9 @@ public class CustomerScript : MonoBehaviour
 		{
 			Decide(); // Wish it was this easy IRL. 
 		}
-		if (Vector3.Distance(Me.destination, new Vector3(transform.position.x, 0, transform.position.z)) < 0.1f)
+		if (Vector3.Distance(Me.destination, new Vector3(transform.position.x, 0, transform.position.z)) < 0.1f && GetCumulative(Me.velocity) < 0.1f)
 		{
-			if (WhatAmIDoing != VerbActions.Idle || WhatAmIDoing == VerbActions.Idle && WaitTime <= 0)
+			if (WhatAmIDoing != VerbActions.Sitting || WhatAmIDoing == VerbActions.Sitting && WaitTime <= 0)
 			{
 				IHaveArrived();
 			}
@@ -153,7 +158,7 @@ public class CustomerScript : MonoBehaviour
 					return;
 				} else
 				{
-
+					
 				}
 				break;
 			case VerbActions.ExittingHome:
@@ -170,7 +175,7 @@ public class CustomerScript : MonoBehaviour
 			case VerbActions.GoHome:
 				MyCollision.enabled = false;
 				WhatAmIDoing = VerbActions.EnteringHome;
-				Me.SetDestination(GetEntranceOffset(House.Direction, true));
+				Me.SetDestination(GetEntranceOffset(House.Direction, true)*3 + House.EntrancePosition);
 				break;
 			default:
 				WhatAmIDoing = VerbActions.Idle;

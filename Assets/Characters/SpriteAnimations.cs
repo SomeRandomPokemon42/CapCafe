@@ -43,7 +43,8 @@ public class SpriteAnimations : MonoBehaviour
 				MovementVector = Vector2.zero;
 			} else
 			{
-				MovementVector = transform.parent.forward.normalized;
+				MovementVector.x = transform.parent.forward.normalized.x;
+				MovementVector.y = transform.parent.forward.normalized.z;
 			}
 		}
 

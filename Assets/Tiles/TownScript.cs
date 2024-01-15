@@ -31,11 +31,9 @@ public class TownScript : MonoBehaviour
 		{
 			// What is this lambda black magic you speak of?!
 			UnusedTownPositions = TownPositions.OrderBy(x => Random.value).ToList();
-		} else
-		{
-			ReturnValue = UnusedTownPositions[Random.Range(0, UnusedTownPositions.Count)];
-			UnusedTownPositions.Remove(ReturnValue);
 		}
+		ReturnValue = UnusedTownPositions[Random.Range(0, UnusedTownPositions.Count)];
+		UnusedTownPositions.Remove(ReturnValue);
 		return ReturnValue;
 	}
 
