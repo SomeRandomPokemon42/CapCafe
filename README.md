@@ -19,6 +19,12 @@ Character Template by Guildmaker7.
 Dirt, Oak Log, Spruce Leaf, and Grass Textures from Minecraft.
 All other art by SomeRandomPokemon42.
 
+## Characters:
+Some customer characters are references to other media, which I will list here.
+Izuna Kuda, from Blue Archive
+John Bradford, from XCOM
+Hatsune Miku...
+
 ## Code:
 All code is designed by SomeRandomPokemon42, except for the designers of Unity, TextMeshPro, and other used Packages.
 
