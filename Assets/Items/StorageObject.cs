@@ -20,6 +20,7 @@ public class StorageObject : MonoBehaviour
 	public void OnClose()
 	{
 		storedItems = inventoryManager.ClearItems();
+		inventoryManager.DeselectOldSlot(Bounced: true);
 		Adjusted.Invoke();
 	}
 }

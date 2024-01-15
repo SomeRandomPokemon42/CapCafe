@@ -92,6 +92,8 @@ public class InventoryManager : MonoBehaviour
 	}
 	public bool RemoveItem(GameItem item)
 	{
+		if (item == null)
+			return false;
 		foreach (InventorySlot slot in inventorySlots)
 		{
 			if (slot.StoredItem.Equals(item))
