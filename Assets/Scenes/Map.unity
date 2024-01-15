@@ -2090,6 +2090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
   OnlyAllowOrderables: 0
+  MyStorage: {fileID: 0}
 --- !u!114 &146774142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2142,7 +2143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 146774140}
   movement: {fileID: 1898990189}
-  RunawayDistance: 0.5
+  RunawayDistance: 1
 --- !u!4 &147485169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3310280627033565941, guid: 7567e13f26a6e9a459d919b2de128f69, type: 3}
@@ -31744,6 +31745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
   OnlyAllowOrderables: 0
+  MyStorage: {fileID: 0}
 --- !u!4 &1499302557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7387409197465637575, guid: 7d8156951c82e8645967d9b08da6a111, type: 3}
@@ -32036,6 +32038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
   OnlyAllowOrderables: 0
+  MyStorage: {fileID: 0}
 --- !u!4 &1529861436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1426296724705761888, guid: 995fd9edf63f617498b0bd96ad19c4bf, type: 3}
@@ -36720,6 +36723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SecondInventory: {fileID: 0}
   OnlyAllowOrderables: 0
+  MyStorage: {fileID: 0}
 --- !u!114 &1959461975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36734,7 +36738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 1959461976}
   movement: {fileID: 1898990189}
-  RunawayDistance: 0.5
+  RunawayDistance: 1
 --- !u!114 &1959461976
 MonoBehaviour:
   m_ObjectHideFlags: 0

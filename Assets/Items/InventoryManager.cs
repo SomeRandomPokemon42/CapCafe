@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
 	private InventorySlot SelectedSlot;
 	// Unused, used to be used, but a design decision was made against it
 	[SerializeField] private bool OnlyAllowOrderables = false;
+	public StorageObject MyStorage = null;
 
 	void Start()
 	{
