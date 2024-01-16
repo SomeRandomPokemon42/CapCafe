@@ -7,7 +7,7 @@ public class BasicButtonCommands : MonoBehaviour
 	{
 		Application.Quit();
 	}
-	public void StartScene(string scene)
+	public void StartNextScene(string scene)
 	{
 		SceneManager.LoadScene(scene);
 	}
