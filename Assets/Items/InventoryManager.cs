@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
 	private InventorySlot SelectedSlot;
 	// Unused, used to be used, but a design decision was made against it
 	[SerializeField] private bool OnlyAllowOrderables = false;
+	public StorageObject MyStorage = null;
 
 	void Start()
 	{
@@ -91,6 +92,8 @@ public class InventoryManager : MonoBehaviour
 	}
 	public bool RemoveItem(GameItem item)
 	{
+		if (item == null)
+			return false;
 		foreach (InventorySlot slot in inventorySlots)
 		{
 			if (slot.StoredItem.Equals(item))
